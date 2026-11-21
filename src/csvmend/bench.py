@@ -65,8 +65,11 @@ def run_one(ds: dict, planner, work: Path) -> dict:
     prof = profile(table, seed=ds["seed"])
     rows = sample_rows(table, seed=ds["seed"])
     prompt_chars = len(build_prompt(prof, rows, schema))
-    plan = planner["fn"](ds["name"], prof, rows, schema)
-    steps, errors = validate_plan(plan, table.header)
+    try:
+        plan = planner["fn"](ds["name"], prof, rows, schema)
+        steps, errors = validate_plan(plan, table.header)
+    except ValueError as e:  # no JSON in a model answer, or JSON that does not parse
+        steps, errors = [], [f"unreadable answer: {e}"]
     if errors:
         plan = {"version": 1, "steps": []}
     result = run(csv_path, plan, out)

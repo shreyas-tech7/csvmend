@@ -192,8 +192,9 @@ PROVIDERS = {
 
 
 class LLMPlanner:
-    """mode="replay" reads fixtures/<model>/<dataset>.json. mode="record" calls the provider
-    and saves the answer there first."""
+    """mode="replay" reads <fixtures>/<provider>-<model>/<dataset>.json. mode="record" calls
+    the provider and saves the answer there first. A fixture stores the prompt's sha256, so a
+    changed prompt cannot reuse an old answer."""
 
     def __init__(self, provider: str, model: str, fixtures: Path, mode: str = "replay"):
         self.provider, self.model, self.mode = provider, model, mode

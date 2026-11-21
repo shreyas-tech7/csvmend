@@ -161,3 +161,13 @@ def test_rule_baseline_cleans_one_dataset_end_to_end(tmp_path):
     assert rec["plan_errors"] == [] and rec["ops"] >= 3
     cells = rec["score"]["all"]["cells"]
     assert cells[0] / cells[1] > 0.95
+
+
+def test_bench_counts_an_unreadable_answer_as_a_rejected_plan(tmp_path):
+    """Broken case: a model answers with prose and no JSON. The run goes on with an empty plan."""
+
+    def bad(name, prof, rows, schema):
+        return parse_plan("Sorry, I cannot help with that.")
+
+    rec = run_one(suite()[0], {"name": "llm", "fn": bad}, tmp_path)
+    assert rec["plan_errors"] and rec["ops"] == 0
