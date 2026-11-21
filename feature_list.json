@@ -1,0 +1,166 @@
+[
+ {
+  "id": "F01",
+  "area": "setup",
+  "description": "init.sh creates .venv, installs, lints, checks links and runs every test offline",
+  "steps": [
+   "./init.sh"
+  ],
+  "passes": true
+ },
+ {
+  "id": "F02",
+  "area": "generator",
+  "description": "Seeded clean tables for customers, orders and inventory",
+  "steps": [
+   "./.venv/bin/python -m pytest -q tests/test_pipeline.py -k seeded"
+  ],
+  "passes": true
+ },
+ {
+  "id": "F03",
+  "area": "generator",
+  "description": "Mess generator with 9 named messes and ground truth",
+  "steps": [
+   "./.venv/bin/python -m pytest -q tests/test_pipeline.py -k 'mess or ground_truth'"
+  ],
+  "passes": true
+ },
+ {
+  "id": "F04",
+  "area": "plan",
+  "description": "Plan language with 12 operations, each with tests for valid and invalid arguments",
+  "steps": [
+   "./.venv/bin/python -m pytest -q tests/test_plan.py"
+  ],
+  "passes": true
+ },
+ {
+  "id": "F05",
+  "area": "executor",
+  "description": "Executor runs a plan on a copy. Input hash is the same before and after",
+  "steps": [
+   "./.venv/bin/python -m pytest -q tests/test_executor.py -k 'never_changed or refuses or invalid_plan'"
+  ],
+  "passes": true
+ },
+ {
+  "id": "F06",
+  "area": "executor",
+  "description": "Change log holds every change. Replaying the log on the input gives the same output",
+  "steps": [
+   "./.venv/bin/python -m pytest -q tests/test_executor.py -k 'replay or logged or encoding'"
+  ],
+  "passes": true
+ },
+ {
+  "id": "F07",
+  "area": "profiler",
+  "description": "Profiler summarizes columns without the whole file. Examples come only from the 20 row sample",
+  "steps": [
+   "./.venv/bin/python -m pytest -q tests/test_pipeline.py -k profile"
+  ],
+  "passes": true
+ },
+ {
+  "id": "F08",
+  "area": "verifier",
+  "description": "Verifier checks columns, types, ranges, uniqueness, allowed values and row counts",
+  "steps": [
+   "./.venv/bin/python -m pytest -q tests/test_pipeline.py -k verifier"
+  ],
+  "passes": true
+ },
+ {
+  "id": "F09",
+  "area": "planner",
+  "description": "Rule baseline maps profile patterns to operations",
+  "steps": [
+   "./.venv/bin/python -m pytest -q tests/test_pipeline.py -k rule_baseline"
+  ],
+  "passes": true
+ },
+ {
+  "id": "F10",
+  "area": "bench",
+  "description": "Metrics (cell accuracy, row recall, duplicate F1, ops) and a benchmark of 40 dev and 24 held out datasets with bootstrap intervals",
+  "steps": [
+   "./.venv/bin/python -m pytest -q tests/test_pipeline.py -k 'suite or interval or score'",
+   ".venv/bin/csvmend bench"
+  ],
+  "passes": true
+ },
+ {
+  "id": "F11",
+  "area": "planner",
+  "description": "LLM planner sees only the schema, the profile and at most 20 rows. Fixture replay works",
+  "steps": [
+   "./.venv/bin/python -m pytest -q tests/test_pipeline.py -k 'llm or parse_plan'"
+  ],
+  "passes": true
+ },
+ {
+  "id": "F12",
+  "area": "bench",
+  "description": "Record run with one free model, reported in the README table",
+  "steps": [
+   ".venv/bin/csvmend bench --llm groq:llama-3.3-70b-versatile --record"
+  ],
+  "passes": false
+ },
+ {
+  "id": "F13",
+  "area": "docs",
+  "description": "README tables come from the results files and a test fails when they drift",
+  "steps": [
+   ".venv/bin/csvmend readme --check",
+   "./.venv/bin/python -m pytest -q tests/test_repo.py -k numbers"
+  ],
+  "passes": true
+ },
+ {
+  "id": "F14",
+  "area": "docs",
+  "description": "Repo quality bar: README parts, CI, badge, topics, social preview, demo page, DEMO.md, issue templates",
+  "steps": [
+   "./.venv/bin/python -m pytest -q tests/test_repo.py"
+  ],
+  "passes": true
+ },
+ {
+  "id": "F15",
+  "area": "docs",
+  "description": "Study-later kit: WALKTHROUGH, INTERVIEW_QA, DECISIONS",
+  "steps": [
+   "./.venv/bin/python -m pytest -q tests/test_repo.py -k ship_files"
+  ],
+  "passes": true
+ },
+ {
+  "id": "F16",
+  "area": "release",
+  "description": "Release check: gitleaks, pip-audit, ruff S, actionlint, link check, outside review",
+  "steps": [
+   "cat docs/RELEASE_CHECK.md"
+  ],
+  "passes": false
+ },
+ {
+  "id": "F17",
+  "area": "release",
+  "description": "Hand-off: CHANGELOG with release SHA, HUMAN_STEPS, COWORK_PROMPT, GITHUB_ABOUT, topics",
+  "steps": [
+   "grep -E '[0-9a-f]{40}' CHANGELOG.md docs/HUMAN_STEPS.md"
+  ],
+  "passes": false
+ },
+ {
+  "id": "F18",
+  "area": "safety",
+  "description": "Tests run offline. A guard blocks network access and has its own test",
+  "steps": [
+   "./.venv/bin/python -m pytest -q tests/test_network_guard.py"
+  ],
+  "passes": true
+ }
+]

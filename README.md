@@ -53,7 +53,7 @@ Held out sets (24 datasets, generator seeds 1000 to 1023, new mixes of four to s
 | missing values | 11 | 100.0% (100.0 to 100.0) | 94.9% (91.9 to 97.8) |  | 13.4% (8.8 to 18.8) |
 | shifted rows | 13 | n/a | 18.5% (10.3 to 25.6) |  | 35.6% (27.9 to 42.3) |
 
-The verifier passed every check on 16 of 24 held out outputs. Most failures are the row count check, which flags outputs that lost more than a fifth of their rows.
+The verifier passed every check on 16 of 24 held out outputs. Failed checks by name: row_count 8. The row_count check flags outputs that lost more than a fifth of their rows.
 
 Second held out run with new seeds (2000 to 2023), because the first looked very good: cell accuracy 99.9% (99.8 to 100.0), row recall 94.2% (91.8 to 96.6), duplicate F1 91.3% (85.4 to 95.8).
 <!-- /gen:results -->

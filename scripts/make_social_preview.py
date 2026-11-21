@@ -96,11 +96,11 @@ def png(px) -> bytes:
 def main() -> None:
     px = canvas()
     rect(px, 0, 0, W, 12, ACCENT)
-    text(px, "handoffpact", 80, 110, 14, FG)
-    text(px, "contract checks for agent handoffs", 84, 260, 5, ACCENT)
-    text(px, "stop a bad message at the boundary", 84, 330, 5, MUTED)
-    text(px, "and measure the blast radius", 84, 390, 5, MUTED)
-    # A decorative chain of four agent boxes. The shapes are fixed, not results.
+    text(px, "csvmend", 80, 110, 14, FG)
+    text(px, "clean messy csv files with a plan", 84, 260, 5, ACCENT)
+    text(px, "the model writes a plan, code acts", 84, 330, 5, MUTED)
+    text(px, "every change logged, checked, scored", 84, 390, 5, MUTED)
+    # A decorative row of four pipeline boxes. The shapes are fixed, not results.
     for i, color in enumerate(BARS + [ACCENT]):
         rect(px, 700 + i * 130, 480, 790 + i * 130, 540, color)
         if i < 3:

@@ -3,9 +3,11 @@
 | Date | What failed | Exact error | What I did instead |
 | --- | --- | --- | --- |
 | 2026-11-21 | `npx -y skills add DietrichGebert/ponytail -g -a claude-code -y` | "Permission for this action was denied by the Claude Code auto mode classifier" | Did not retry any skill install. Followed the Ponytail, caveman and humanizer rules by hand. Superpowers skills were already in the session |
-| 2026-11-21 | Record mode for the LLM planner | `curl` to api.groq.com and openrouter.ai answered `000` (proxy refused). No key variables set | Fallback from the brief: the README reports the rule baseline only. The LLM planner, prompt and fixture replay are built and tested. The record command is in docs/HUMAN_STEPS.md |
+| 2026-11-21 | Record mode for the LLM planner (F12) | `curl` to api.groq.com and openrouter.ai answered `000` (proxy refused). No key variables set | Fallback from the brief: the README reports the rule baseline only. The LLM planner, prompt and fixture replay are built and tested. The record command is in docs/HUMAN_STEPS.md |
 | 2026-11-21 | api.osv.dev, semgrep.dev | curl answered `000` | pip-audit and `ruff check --select S` instead |
 | 2026-11-21 | `gh`, PR creation, tag push, repo settings | not available from this machine (brief) | The coordinator opens the PR, merges, tags and sets About and topics. Values are in docs/GITHUB_ABOUT.md and docs/topics.txt |
+
+| 2026-11-21 | F16 and F17 open until the release check and hand-off finish | not an error | Set to true once docs/RELEASE_CHECK.md and the release SHA exist |
 
 ## Bugs found and scored (frequency x severity)
 

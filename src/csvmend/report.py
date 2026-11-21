@@ -9,6 +9,7 @@ from __future__ import annotations
 import html
 import json
 import re
+from collections import Counter
 from pathlib import Path
 
 from .executor import load, read_log, run
@@ -56,6 +57,17 @@ def _table(res: dict, split: str) -> str:
     return "\n".join(lines)
 
 
+def _verifier_line(res: dict, meta: dict) -> str:
+    recs = [r for r in res["records"]["rules"] if r["split"] == "heldout"]
+    failed = Counter(c for r in recs for c in r["checks_failed"])
+    passed = res["planners"]["rules"]["heldout"]["verifier_pass"]
+    line = f"The verifier passed every check on {passed} of {meta['datasets']['heldout']} held out outputs."  # fmt: skip
+    if failed:
+        parts = ", ".join(f"{name} {n}" for name, n in failed.most_common())
+        line += f" Failed checks by name: {parts}. The row_count check flags outputs that lost more than a fifth of their rows."  # fmt: skip
+    return line
+
+
 def blocks(root: Path) -> dict[str, str]:
     res = json.loads((root / FINAL).read_text())
     meta = res["meta"]
@@ -67,7 +79,7 @@ def blocks(root: Path) -> dict[str, str]:
             "",
             _table(res, "heldout"),
             "",
-            f"The verifier passed every check on {held['verifier_pass']} of {meta['datasets']['heldout']} held out outputs. Most failures are the row count check, which flags outputs that lost more than a fifth of their rows.",  # fmt: skip
+            _verifier_line(res, meta),
         ]
     )
     if (root / SECOND).exists():
