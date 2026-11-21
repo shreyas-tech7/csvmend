@@ -1,0 +1,25 @@
+name: Benchmark
+
+# Heavy run, by hand only. It reruns the rule baseline on every dataset and uploads the results.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  bench:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: astral-sh/setup-uv@v6
+      - run: ./init.sh
+      - run: .venv/bin/csvmend bench --out results/ci-bench.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: bench-results
+          path: results/ci-bench.json
