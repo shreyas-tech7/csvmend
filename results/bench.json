@@ -1,0 +1,10835 @@
+{
+ "planners": {
+  "noop": {
+   "label": "no plan (input as is)",
+   "dev": {
+    "datasets": 40,
+    "metrics": {
+     "all": {
+      "cells": {
+       "value": 0.7277466692411663,
+       "lo": 0.6842473819906421,
+       "hi": 0.7708604643776006,
+       "datasets": 40,
+       "n": 31074
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 40,
+       "n": 3587
+      },
+      "dup_f1": {
+       "value": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "datasets": 14,
+       "n": 191
+      }
+     },
+     "mixed_dates": {
+      "cells": {
+       "value": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "datasets": 8,
+       "n": 359
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 8,
+       "n": 350
+      }
+     },
+     "currency": {
+      "cells": {
+       "value": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "datasets": 9,
+       "n": 513
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 9,
+       "n": 498
+      }
+     },
+     "category_typos": {
+      "cells": {
+       "value": 0.002105263157894737,
+       "lo": 0.0,
+       "hi": 0.006085192697768763,
+       "datasets": 13,
+       "n": 475
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 13,
+       "n": 433
+      }
+     },
+     "near_duplicates": {
+      "cells": {
+       "value": null,
+       "lo": null,
+       "hi": null,
+       "datasets": 0,
+       "n": 0
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 14,
+       "n": 191
+      },
+      "dup_f1": {
+       "value": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "datasets": 14,
+       "n": 191
+      }
+     },
+     "unit_mismatch": {
+      "cells": {
+       "value": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "datasets": 7,
+       "n": 382
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 7,
+       "n": 370
+      }
+     },
+     "split_merge": {
+      "cells": {
+       "value": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "datasets": 13,
+       "n": 2317
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 13,
+       "n": 1152
+      }
+     },
+     "whitespace_encoding": {
+      "cells": {
+       "value": 0.16889912097111762,
+       "lo": 0.1267767079321412,
+       "hi": 0.21333333333333335,
+       "datasets": 13,
+       "n": 4778
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 13,
+       "n": 1191
+      }
+     },
+     "missing_values": {
+      "cells": {
+       "value": 0.1362862010221465,
+       "lo": 0.1015625,
+       "hi": 0.17391304347826086,
+       "datasets": 21,
+       "n": 587
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 21,
+       "n": 587
+      }
+     },
+     "shifted_rows": {
+      "cells": {
+       "value": 0.37712519319938176,
+       "lo": 0.33050127442650806,
+       "hi": 0.42274509803921567,
+       "datasets": 17,
+       "n": 1294
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 17,
+       "n": 148
+      }
+     }
+    },
+    "ops_mean": 0.0,
+    "ms_mean": 9.6325,
+    "prompt_chars_mean": 6930.8,
+    "plans_rejected": 0,
+    "verifier_pass": 0
+   },
+   "heldout": {
+    "datasets": 24,
+    "metrics": {
+     "all": {
+      "cells": {
+       "value": 0.5575855782864088,
+       "lo": 0.4842435655994978,
+       "hi": 0.6328815556865056,
+       "datasets": 24,
+       "n": 24685
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 24,
+       "n": 2848
+      },
+      "dup_f1": {
+       "value": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "datasets": 15,
+       "n": 323
+      }
+     },
+     "mixed_dates": {
+      "cells": {
+       "value": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "datasets": 17,
+       "n": 1135
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 17,
+       "n": 1084
+      }
+     },
+     "currency": {
+      "cells": {
+       "value": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "datasets": 12,
+       "n": 918
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 12,
+       "n": 873
+      }
+     },
+     "category_typos": {
+      "cells": {
+       "value": 0.0030349013657056147,
+       "lo": 0.0,
+       "hi": 0.007320644216691069,
+       "datasets": 12,
+       "n": 659
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 12,
+       "n": 588
+      }
+     },
+     "near_duplicates": {
+      "cells": {
+       "value": null,
+       "lo": null,
+       "hi": null,
+       "datasets": 0,
+       "n": 0
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 15,
+       "n": 323
+      },
+      "dup_f1": {
+       "value": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "datasets": 15,
+       "n": 323
+      }
+     },
+     "unit_mismatch": {
+      "cells": {
+       "value": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "datasets": 9,
+       "n": 718
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 9,
+       "n": 671
+      }
+     },
+     "split_merge": {
+      "cells": {
+       "value": 0.0,
+       "lo": 0.0,
+       "hi": 0.0,
+       "datasets": 13,
+       "n": 3094
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 13,
+       "n": 1508
+      }
+     },
+     "whitespace_encoding": {
+      "cells": {
+       "value": 0.13170131291028447,
+       "lo": 0.08712548577159333,
+       "hi": 0.1783695328771199,
+       "datasets": 16,
+       "n": 7312
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 16,
+       "n": 1791
+      }
+     },
+     "missing_values": {
+      "cells": {
+       "value": 0.13392857142857142,
+       "lo": 0.08780487804878048,
+       "hi": 0.18761726078799248,
+       "datasets": 11,
+       "n": 448
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 11,
+       "n": 448
+      }
+     },
+     "shifted_rows": {
+      "cells": {
+       "value": 0.3563701923076923,
+       "lo": 0.2790513833992095,
+       "hi": 0.4230324074074074,
+       "datasets": 13,
+       "n": 1664
+      },
+      "rows": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 13,
+       "n": 189
+      }
+     }
+    },
+    "ops_mean": 0.0,
+    "ms_mean": 13.779166666666667,
+    "prompt_chars_mean": 7318.708333333333,
+    "plans_rejected": 0,
+    "verifier_pass": 0
+   }
+  },
+  "rules": {
+   "label": "rule baseline",
+   "dev": {
+    "datasets": 40,
+    "metrics": {
+     "all": {
+      "cells": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 40,
+       "n": 29721
+      },
+      "rows": {
+       "value": 0.9565096180652356,
+       "lo": 0.9402735138152386,
+       "hi": 0.9724420190995907,
+       "datasets": 40,
+       "n": 3587
+      },
+      "dup_f1": {
+       "value": 0.9445910290237467,
+       "lo": 0.9076923076923077,
+       "hi": 0.9667519181585678,
+       "datasets": 22,
+       "n": 379
+      }
+     },
+     "mixed_dates": {
+      "cells": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 8,
+       "n": 321
+      },
+      "rows": {
+       "value": 0.9428571428571428,
+       "lo": 0.8810975609756098,
+       "hi": 1.0,
+       "datasets": 8,
+       "n": 350
+      }
+     },
+     "currency": {
+      "cells": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 9,
+       "n": 472
+      },
+      "rows": {
+       "value": 0.9718875502008032,
+       "lo": 0.9427312775330396,
+       "hi": 0.9958762886597938,
+       "datasets": 9,
+       "n": 498
+      }
+     },
+     "category_typos": {
+      "cells": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 13,
+       "n": 432
+      },
+      "rows": {
+       "value": 0.9515011547344111,
+       "lo": 0.9156378600823045,
+       "hi": 0.9847560975609756,
+       "datasets": 13,
+       "n": 433
+      }
+     },
+     "near_duplicates": {
+      "cells": {
+       "value": null,
+       "lo": null,
+       "hi": null,
+       "datasets": 0,
+       "n": 0
+      },
+      "rows": {
+       "value": 0.9947643979057592,
+       "lo": 0.9826589595375722,
+       "hi": 1.0,
+       "datasets": 14,
+       "n": 191
+      },
+      "dup_f1": {
+       "value": 0.9649595687331537,
+       "lo": 0.9422492401215805,
+       "hi": 0.9822784810126582,
+       "datasets": 14,
+       "n": 371
+      }
+     },
+     "unit_mismatch": {
+      "cells": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 7,
+       "n": 348
+      },
+      "rows": {
+       "value": 0.9540540540540541,
+       "lo": 0.9047619047619048,
+       "hi": 0.9972972972972973,
+       "datasets": 7,
+       "n": 370
+      }
+     },
+     "split_merge": {
+      "cells": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 13,
+       "n": 2168
+      },
+      "rows": {
+       "value": 0.96875,
+       "lo": 0.9456029011786038,
+       "hi": 0.9884547069271759,
+       "datasets": 13,
+       "n": 1152
+      }
+     },
+     "whitespace_encoding": {
+      "cells": {
+       "value": 0.9990829894543787,
+       "lo": 0.9974646101838157,
+       "hi": 1.0,
+       "datasets": 13,
+       "n": 4362
+      },
+      "rows": {
+       "value": 0.961376994122586,
+       "lo": 0.9299920445505171,
+       "hi": 0.9903147699757869,
+       "datasets": 13,
+       "n": 1191
+      }
+     },
+     "missing_values": {
+      "cells": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 21,
+       "n": 557
+      },
+      "rows": {
+       "value": 0.948892674616695,
+       "lo": 0.9174147217235189,
+       "hi": 0.9773123909249564,
+       "datasets": 21,
+       "n": 587
+      }
+     },
+     "shifted_rows": {
+      "cells": {
+       "value": null,
+       "lo": null,
+       "hi": null,
+       "datasets": 0,
+       "n": 0
+      },
+      "rows": {
+       "value": 0.006756756756756757,
+       "lo": 0.0,
+       "hi": 0.02040816326530612,
+       "datasets": 17,
+       "n": 148
+      }
+     }
+    },
+    "ops_mean": 4.325,
+    "ms_mean": 93.0525,
+    "prompt_chars_mean": 6930.8,
+    "plans_rejected": 0,
+    "verifier_pass": 40
+   },
+   "heldout": {
+    "datasets": 24,
+    "metrics": {
+     "all": {
+      "cells": {
+       "value": 0.9980680061823802,
+       "lo": 0.9970975476380768,
+       "hi": 0.9990190468405133,
+       "datasets": 24,
+       "n": 23292
+      },
+      "rows": {
+       "value": 0.9438202247191011,
+       "lo": 0.9233931240657698,
+       "hi": 0.9654123907259597,
+       "datasets": 24,
+       "n": 2848
+      },
+      "dup_f1": {
+       "value": 0.8907563025210085,
+       "lo": 0.8644939965694682,
+       "hi": 0.9159663865546218,
+       "datasets": 16,
+       "n": 595
+      }
+     },
+     "mixed_dates": {
+      "cells": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 17,
+       "n": 983
+      },
+      "rows": {
+       "value": 0.9437269372693727,
+       "lo": 0.9186241610738255,
+       "hi": 0.9684684684684685,
+       "datasets": 17,
+       "n": 1084
+      }
+     },
+     "currency": {
+      "cells": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 12,
+       "n": 794
+      },
+      "rows": {
+       "value": 0.9461626575028637,
+       "lo": 0.9183445190156599,
+       "hi": 0.9746835443037974,
+       "datasets": 12,
+       "n": 873
+      }
+     },
+     "category_typos": {
+      "cells": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 12,
+       "n": 595
+      },
+      "rows": {
+       "value": 0.9642857142857143,
+       "lo": 0.934560327198364,
+       "hi": 0.9882005899705014,
+       "datasets": 12,
+       "n": 588
+      }
+     },
+     "near_duplicates": {
+      "cells": {
+       "value": null,
+       "lo": null,
+       "hi": null,
+       "datasets": 0,
+       "n": 0
+      },
+      "rows": {
+       "value": 0.9907120743034056,
+       "lo": 0.9805194805194806,
+       "hi": 1.0,
+       "datasets": 15,
+       "n": 323
+      },
+      "dup_f1": {
+       "value": 0.8922558922558923,
+       "lo": 0.8647619047619047,
+       "hi": 0.9183673469387755,
+       "datasets": 15,
+       "n": 594
+      }
+     },
+     "unit_mismatch": {
+      "cells": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 9,
+       "n": 626
+      },
+      "rows": {
+       "value": 0.9657228017883756,
+       "lo": 0.935,
+       "hi": 0.9932546374367622,
+       "datasets": 9,
+       "n": 671
+      }
+     },
+     "split_merge": {
+      "cells": {
+       "value": 0.9880239520958084,
+       "lo": 0.9808135072908672,
+       "hi": 0.9948811700182816,
+       "datasets": 13,
+       "n": 2672
+      },
+      "rows": {
+       "value": 0.9489389920424404,
+       "lo": 0.9208679004467135,
+       "hi": 0.9774943735933983,
+       "datasets": 13,
+       "n": 1508
+      }
+     },
+     "whitespace_encoding": {
+      "cells": {
+       "value": 0.996721823290665,
+       "lo": 0.9942425332853544,
+       "hi": 0.9989543394911119,
+       "datasets": 16,
+       "n": 6406
+      },
+      "rows": {
+       "value": 0.96035734226689,
+       "lo": 0.9313953488372093,
+       "hi": 0.9846678023850085,
+       "datasets": 16,
+       "n": 1791
+      }
+     },
+     "missing_values": {
+      "cells": {
+       "value": 1.0,
+       "lo": 1.0,
+       "hi": 1.0,
+       "datasets": 11,
+       "n": 419
+      },
+      "rows": {
+       "value": 0.9486607142857143,
+       "lo": 0.9191919191919192,
+       "hi": 0.9778325123152709,
+       "datasets": 11,
+       "n": 448
+      }
+     },
+     "shifted_rows": {
+      "cells": {
+       "value": null,
+       "lo": null,
+       "hi": null,
+       "datasets": 0,
+       "n": 0
+      },
+      "rows": {
+       "value": 0.18518518518518517,
+       "lo": 0.10326086956521739,
+       "hi": 0.2558139534883721,
+       "datasets": 13,
+       "n": 189
+      }
+     }
+    },
+    "ops_mean": 6.541666666666667,
+    "ms_mean": 154.08333333333334,
+    "prompt_chars_mean": 7318.708333333333,
+    "plans_rejected": 0,
+    "verifier_pass": 16
+   }
+  }
+ },
+ "records": {
+  "noop": [
+   {
+    "name": "dev00",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "currency",
+     "category_typos",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "type:signup_date",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 9.0,
+    "prompt_chars": 7821,
+    "score": {
+     "all": {
+      "cells": [
+       548,
+       621
+      ],
+      "rows": [
+       69,
+       69
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       0,
+       36
+      ],
+      "rows": [
+       36,
+       36
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       17
+      ],
+      "rows": [
+       17,
+       17
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       2,
+       22
+      ],
+      "rows": [
+       22,
+       22
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev01",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "near_duplicates"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "type:order_date",
+     "allowed:category",
+     "type:unit_price"
+    ],
+    "ms": 11.2,
+    "prompt_chars": 6767,
+    "score": {
+     "all": {
+      "cells": [
+       813,
+       918
+      ],
+      "rows": [
+       102,
+       102
+      ],
+      "extra_rows": 8
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       50
+      ],
+      "rows": [
+       48,
+       48
+      ]
+     },
+     "currency": {
+      "cells": [
+       0,
+       64
+      ],
+      "rows": [
+       61,
+       61
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       8,
+       8
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 8,
+      "f1": [
+       0,
+       8
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev02",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "unit_mismatch",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "allowed:category",
+     "type:stock",
+     "type:unit_cost",
+     "type:weight_kg",
+     "range:weight_kg",
+     "type:last_restock",
+     "allowed:warehouse"
+    ],
+    "ms": 10.0,
+    "prompt_chars": 6250,
+    "score": {
+     "all": {
+      "cells": [
+       803,
+       928
+      ],
+      "rows": [
+       116,
+       116
+      ],
+      "extra_rows": 0
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       58
+      ],
+      "rows": [
+       58,
+       58
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       6,
+       34
+      ],
+      "rows": [
+       34,
+       34
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       55,
+       104
+      ],
+      "rows": [
+       13,
+       13
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev03",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "unit_mismatch",
+     "whitespace_encoding",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:signup_date",
+     "allowed:segment"
+    ],
+    "ms": 8.8,
+    "prompt_chars": 7565,
+    "score": {
+     "all": {
+      "cells": [
+       467,
+       756
+      ],
+      "rows": [
+       84,
+       84
+      ],
+      "extra_rows": 0
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       98,
+       369
+      ],
+      "rows": [
+       84,
+       84
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       20,
+       63
+      ],
+      "rows": [
+       7,
+       7
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev04",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "category_typos",
+     "unit_mismatch",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "type:order_date",
+     "allowed:category",
+     "type:unit_price",
+     "type:weight_kg"
+    ],
+    "ms": 8.7,
+    "prompt_chars": 7097,
+    "score": {
+     "all": {
+      "cells": [
+       682,
+       783
+      ],
+      "rows": [
+       87,
+       87
+      ],
+      "extra_rows": 0
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       26
+      ],
+      "rows": [
+       26,
+       26
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       53
+      ],
+      "rows": [
+       53,
+       53
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       5,
+       27
+      ],
+      "rows": [
+       27,
+       27
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev05",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:last_restock",
+     "allowed:warehouse"
+    ],
+    "ms": 9.7,
+    "prompt_chars": 6216,
+    "score": {
+     "all": {
+      "cells": [
+       405,
+       784
+      ],
+      "rows": [
+       98,
+       98
+      ],
+      "extra_rows": 11
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       56
+      ],
+      "rows": [
+       55,
+       55
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       11,
+       11
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       31,
+       393
+      ],
+      "rows": [
+       98,
+       98
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 11,
+      "f1": [
+       0,
+       11
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev06",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "unit_mismatch",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "type:signup_date",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 9.5,
+    "prompt_chars": 7458,
+    "score": {
+     "all": {
+      "cells": [
+       797,
+       855
+      ],
+      "rows": [
+       95,
+       95
+      ],
+      "extra_rows": 0
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       6,
+       29
+      ],
+      "rows": [
+       29,
+       29
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       42,
+       81
+      ],
+      "rows": [
+       9,
+       9
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev07",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "whitespace_encoding",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:weight_kg",
+     "range:weight_kg"
+    ],
+    "ms": 9.1,
+    "prompt_chars": 6694,
+    "score": {
+     "all": {
+      "cells": [
+       545,
+       927
+      ],
+      "rows": [
+       103,
+       103
+      ],
+      "extra_rows": 0
+     },
+     "whitespace_encoding": {
+      "cells": [
+       70,
+       394
+      ],
+      "rows": [
+       103,
+       103
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       0,
+       32
+      ],
+      "rows": [
+       32,
+       32
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       42,
+       135
+      ],
+      "rows": [
+       15,
+       15
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev08",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "split_merge",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:last_restock",
+     "allowed:warehouse"
+    ],
+    "ms": 9.7,
+    "prompt_chars": 6599,
+    "score": {
+     "all": {
+      "cells": [
+       351,
+       816
+      ],
+      "rows": [
+       102,
+       102
+      ],
+      "extra_rows": 0
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       102
+      ],
+      "rows": [
+       102,
+       102
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       66,
+       418
+      ],
+      "rows": [
+       102,
+       102
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       5,
+       27
+      ],
+      "rows": [
+       27,
+       27
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev09",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "type:signup_date",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 10.5,
+    "prompt_chars": 7571,
+    "score": {
+     "all": {
+      "cells": [
+       572,
+       684
+      ],
+      "rows": [
+       76,
+       76
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       39
+      ],
+      "rows": [
+       39,
+       39
+      ]
+     },
+     "currency": {
+      "cells": [
+       0,
+       50
+      ],
+      "rows": [
+       50,
+       50
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       29,
+       63
+      ],
+      "rows": [
+       7,
+       7
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev10",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "category_typos",
+     "near_duplicates",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category"
+    ],
+    "ms": 9.7,
+    "prompt_chars": 6990,
+    "score": {
+     "all": {
+      "cells": [
+       450,
+       720
+      ],
+      "rows": [
+       80,
+       80
+      ],
+      "extra_rows": 14
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       28
+      ],
+      "rows": [
+       27,
+       27
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       14,
+       14
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       72,
+       369
+      ],
+      "rows": [
+       80,
+       80
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 14,
+      "f1": [
+       0,
+       14
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev11",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "category_typos",
+     "split_merge",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:stock",
+     "range:weight_kg",
+     "type:last_restock",
+     "allowed:warehouse"
+    ],
+    "ms": 8.3,
+    "prompt_chars": 6857,
+    "score": {
+     "all": {
+      "cells": [
+       480,
+       648
+      ],
+      "rows": [
+       81,
+       81
+      ],
+      "extra_rows": 0
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       58
+      ],
+      "rows": [
+       50,
+       50
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       81
+      ],
+      "rows": [
+       81,
+       81
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       15,
+       56
+      ],
+      "rows": [
+       7,
+       7
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev12",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "split_merge",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:signup_date",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 8.6,
+    "prompt_chars": 6771,
+    "score": {
+     "all": {
+      "cells": [
+       416,
+       675
+      ],
+      "rows": [
+       75,
+       75
+      ],
+      "extra_rows": 0
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       225
+      ],
+      "rows": [
+       75,
+       75
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       7,
+       25
+      ],
+      "rows": [
+       25,
+       25
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       14,
+       45
+      ],
+      "rows": [
+       5,
+       5
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev13",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "near_duplicates",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "type:order_date",
+     "allowed:category",
+     "type:quantity",
+     "type:unit_price",
+     "type:weight_kg",
+     "range:weight_kg"
+    ],
+    "ms": 12.7,
+    "prompt_chars": 6781,
+    "score": {
+     "all": {
+      "cells": [
+       998,
+       1080
+      ],
+      "rows": [
+       120,
+       120
+      ],
+      "extra_rows": 11
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       11,
+       11
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       2,
+       32
+      ],
+      "rows": [
+       32,
+       32
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       56,
+       126
+      ],
+      "rows": [
+       13,
+       13
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 11,
+      "f1": [
+       0,
+       11
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev14",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "category_typos",
+     "near_duplicates",
+     "unit_mismatch"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "allowed:category",
+     "type:weight_kg",
+     "allowed:warehouse"
+    ],
+    "ms": 8.8,
+    "prompt_chars": 6860,
+    "score": {
+     "all": {
+      "cells": [
+       469,
+       560
+      ],
+      "rows": [
+       70,
+       70
+      ],
+      "extra_rows": 11
+     },
+     "category_typos": {
+      "cells": [
+       1,
+       59
+      ],
+      "rows": [
+       46,
+       46
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       11,
+       11
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       48
+      ],
+      "rows": [
+       45,
+       45
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 11,
+      "f1": [
+       0,
+       11
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev15",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "currency",
+     "category_typos",
+     "near_duplicates"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 17.0,
+    "prompt_chars": 8286,
+    "score": {
+     "all": {
+      "cells": [
+       949,
+       1053
+      ],
+      "rows": [
+       117,
+       117
+      ],
+      "extra_rows": 25
+     },
+     "currency": {
+      "cells": [
+       0,
+       80
+      ],
+      "rows": [
+       74,
+       74
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       47
+      ],
+      "rows": [
+       46,
+       46
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       25,
+       25
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 25,
+      "f1": [
+       0,
+       25
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev16",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "currency",
+     "category_typos",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "allowed:category",
+     "type:quantity",
+     "type:unit_price",
+     "type:weight_kg",
+     "range:weight_kg"
+    ],
+    "ms": 11.2,
+    "prompt_chars": 6899,
+    "score": {
+     "all": {
+      "cells": [
+       857,
+       981
+      ],
+      "rows": [
+       109,
+       109
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       0,
+       69
+      ],
+      "rows": [
+       69,
+       69
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       30
+      ],
+      "rows": [
+       30,
+       30
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       17,
+       45
+      ],
+      "rows": [
+       5,
+       5
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev17",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "unit_mismatch"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "type:weight_kg",
+     "type:last_restock"
+    ],
+    "ms": 8.0,
+    "prompt_chars": 6222,
+    "score": {
+     "all": {
+      "cells": [
+       515,
+       592
+      ],
+      "rows": [
+       74,
+       74
+      ],
+      "extra_rows": 10
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       42
+      ],
+      "rows": [
+       39,
+       39
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       10,
+       10
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       47
+      ],
+      "rows": [
+       42,
+       42
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 10,
+      "f1": [
+       0,
+       10
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev18",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "near_duplicates",
+     "split_merge",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:signup_date",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 8.9,
+    "prompt_chars": 7391,
+    "score": {
+     "all": {
+      "cells": [
+       372,
+       576
+      ],
+      "rows": [
+       64,
+       64
+      ],
+      "extra_rows": 10
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       10,
+       10
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       222
+      ],
+      "rows": [
+       64,
+       64
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       2,
+       14
+      ],
+      "rows": [
+       14,
+       14
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 10,
+      "f1": [
+       0,
+       10
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev19",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "currency",
+     "category_typos",
+     "split_merge"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:unit_price"
+    ],
+    "ms": 8.6,
+    "prompt_chars": 6573,
+    "score": {
+     "all": {
+      "cells": [
+       516,
+       774
+      ],
+      "rows": [
+       86,
+       86
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       0,
+       60
+      ],
+      "rows": [
+       60,
+       60
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       26
+      ],
+      "rows": [
+       26,
+       26
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       172
+      ],
+      "rows": [
+       86,
+       86
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev20",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "currency",
+     "near_duplicates",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category"
+    ],
+    "ms": 12.7,
+    "prompt_chars": 6249,
+    "score": {
+     "all": {
+      "cells": [
+       534,
+       872
+      ],
+      "rows": [
+       109,
+       109
+      ],
+      "extra_rows": 13
+     },
+     "currency": {
+      "cells": [
+       0,
+       75
+      ],
+      "rows": [
+       69,
+       69
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       13,
+       13
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       34,
+       412
+      ],
+      "rows": [
+       109,
+       109
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 13,
+      "f1": [
+       0,
+       13
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev21",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "near_duplicates",
+     "unit_mismatch",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:segment"
+    ],
+    "ms": 12.4,
+    "prompt_chars": 7711,
+    "score": {
+     "all": {
+      "cells": [
+       576,
+       891
+      ],
+      "rows": [
+       99,
+       99
+      ],
+      "extra_rows": 13
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       13,
+       13
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       120,
+       479
+      ],
+      "rows": [
+       99,
+       99
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 13,
+      "f1": [
+       0,
+       13
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev22",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "near_duplicates",
+     "split_merge",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:order_date",
+     "allowed:category",
+     "type:quantity",
+     "type:unit_price",
+     "type:weight_kg"
+    ],
+    "ms": 12.3,
+    "prompt_chars": 6619,
+    "score": {
+     "all": {
+      "cells": [
+       778,
+       1044
+      ],
+      "rows": [
+       116,
+       116
+      ],
+      "extra_rows": 21
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       21,
+       21
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       274
+      ],
+      "rows": [
+       116,
+       116
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       5,
+       39
+      ],
+      "rows": [
+       39,
+       39
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 21,
+      "f1": [
+       0,
+       21
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev23",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "near_duplicates",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:stock",
+     "type:weight_kg",
+     "allowed:warehouse"
+    ],
+    "ms": 10.9,
+    "prompt_chars": 6271,
+    "score": {
+     "all": {
+      "cells": [
+       534,
+       880
+      ],
+      "rows": [
+       110,
+       110
+      ],
+      "extra_rows": 17
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       17,
+       17
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       55,
+       441
+      ],
+      "rows": [
+       110,
+       110
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       5,
+       29
+      ],
+      "rows": [
+       29,
+       29
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 17,
+      "f1": [
+       0,
+       17
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev24",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "split_merge",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:signup_date",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 8.2,
+    "prompt_chars": 6834,
+    "score": {
+     "all": {
+      "cells": [
+       448,
+       756
+      ],
+      "rows": [
+       84,
+       84
+      ],
+      "extra_rows": 0
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       252
+      ],
+      "rows": [
+       84,
+       84
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       2,
+       23
+      ],
+      "rows": [
+       23,
+       23
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       11,
+       72
+      ],
+      "rows": [
+       8,
+       8
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev25",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "near_duplicates",
+     "unit_mismatch",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "type:order_date",
+     "allowed:category",
+     "type:quantity",
+     "type:unit_price",
+     "type:weight_kg"
+    ],
+    "ms": 9.6,
+    "prompt_chars": 7881,
+    "score": {
+     "all": {
+      "cells": [
+       706,
+       774
+      ],
+      "rows": [
+       86,
+       86
+      ],
+      "extra_rows": 15
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       15,
+       15
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       60
+      ],
+      "rows": [
+       56,
+       56
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       4,
+       19
+      ],
+      "rows": [
+       19,
+       19
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 15,
+      "f1": [
+       0,
+       15
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev26",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "split_merge",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:weight_kg",
+     "type:last_restock"
+    ],
+    "ms": 7.4,
+    "prompt_chars": 6526,
+    "score": {
+     "all": {
+      "cells": [
+       336,
+       608
+      ],
+      "rows": [
+       76,
+       76
+      ],
+      "extra_rows": 0
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       76
+      ],
+      "rows": [
+       76,
+       76
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       19,
+       202
+      ],
+      "rows": [
+       76,
+       76
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       4,
+       19
+      ],
+      "rows": [
+       19,
+       19
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev27",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "unit_mismatch",
+     "split_merge",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:signup_date",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 8.8,
+    "prompt_chars": 6766,
+    "score": {
+     "all": {
+      "cells": [
+       497,
+       783
+      ],
+      "rows": [
+       87,
+       87
+      ],
+      "extra_rows": 0
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       261
+      ],
+      "rows": [
+       87,
+       87
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       4,
+       29
+      ],
+      "rows": [
+       29,
+       29
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev28",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "unit_mismatch",
+     "split_merge",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:order_date",
+     "allowed:category",
+     "type:quantity",
+     "type:weight_kg",
+     "range:weight_kg"
+    ],
+    "ms": 7.8,
+    "prompt_chars": 6188,
+    "score": {
+     "all": {
+      "cells": [
+       517,
+       774
+      ],
+      "rows": [
+       86,
+       86
+      ],
+      "extra_rows": 0
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       57
+      ],
+      "rows": [
+       57,
+       57
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       172
+      ],
+      "rows": [
+       86,
+       86
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       28,
+       81
+      ],
+      "rows": [
+       9,
+       9
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev29",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "category_typos",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "allowed:category",
+     "type:stock",
+     "type:unit_cost",
+     "type:weight_kg",
+     "range:weight_kg",
+     "type:last_restock",
+     "allowed:warehouse"
+    ],
+    "ms": 6.9,
+    "prompt_chars": 6746,
+    "score": {
+     "all": {
+      "cells": [
+       528,
+       616
+      ],
+      "rows": [
+       77,
+       77
+      ],
+      "extra_rows": 0
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       53
+      ],
+      "rows": [
+       43,
+       43
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       3,
+       22
+      ],
+      "rows": [
+       22,
+       22
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       17,
+       40
+      ],
+      "rows": [
+       5,
+       5
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev30",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "type:signup_date",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 8.3,
+    "prompt_chars": 7638,
+    "score": {
+     "all": {
+      "cells": [
+       494,
+       549
+      ],
+      "rows": [
+       61,
+       61
+      ],
+      "extra_rows": 12
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       35
+      ],
+      "rows": [
+       32,
+       32
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       12,
+       12
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       0,
+       25
+      ],
+      "rows": [
+       25,
+       25
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 12,
+      "f1": [
+       0,
+       12
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev31",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "category_typos",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:order_date",
+     "type:unit_price",
+     "type:weight_kg"
+    ],
+    "ms": 8.4,
+    "prompt_chars": 6929,
+    "score": {
+     "all": {
+      "cells": [
+       439,
+       675
+      ],
+      "rows": [
+       75,
+       75
+      ],
+      "extra_rows": 0
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       23
+      ],
+      "rows": [
+       23,
+       23
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       50,
+       275
+      ],
+      "rows": [
+       75,
+       75
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       4,
+       27
+      ],
+      "rows": [
+       27,
+       27
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev32",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "category_typos",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "allowed:category",
+     "type:stock",
+     "range:weight_kg",
+     "type:last_restock",
+     "allowed:warehouse"
+    ],
+    "ms": 9.0,
+    "prompt_chars": 6573,
+    "score": {
+     "all": {
+      "cells": [
+       435,
+       560
+      ],
+      "rows": [
+       70,
+       70
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       37
+      ],
+      "rows": [
+       37,
+       37
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       46
+      ],
+      "rows": [
+       37,
+       37
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       31,
+       88
+      ],
+      "rows": [
+       11,
+       11
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev33",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "currency",
+     "whitespace_encoding",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 8.4,
+    "prompt_chars": 7630,
+    "score": {
+     "all": {
+      "cells": [
+       351,
+       648
+      ],
+      "rows": [
+       72,
+       72
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       0,
+       35
+      ],
+      "rows": [
+       35,
+       35
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       84,
+       324
+      ],
+      "rows": [
+       72,
+       72
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       34,
+       99
+      ],
+      "rows": [
+       11,
+       11
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev34",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "category_typos",
+     "split_merge",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:order_date",
+     "allowed:category",
+     "type:quantity",
+     "range:weight_kg"
+    ],
+    "ms": 7.8,
+    "prompt_chars": 6410,
+    "score": {
+     "all": {
+      "cells": [
+       566,
+       792
+      ],
+      "rows": [
+       88,
+       88
+      ],
+      "extra_rows": 0
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       34
+      ],
+      "rows": [
+       34,
+       34
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       176
+      ],
+      "rows": [
+       88,
+       88
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       18,
+       45
+      ],
+      "rows": [
+       5,
+       5
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev35",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "split_merge",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:stock",
+     "type:unit_cost",
+     "type:weight_kg",
+     "type:last_restock",
+     "allowed:warehouse"
+    ],
+    "ms": 10.5,
+    "prompt_chars": 6582,
+    "score": {
+     "all": {
+      "cells": [
+       691,
+       880
+      ],
+      "rows": [
+       110,
+       110
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       54
+      ],
+      "rows": [
+       54,
+       54
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       110
+      ],
+      "rows": [
+       110,
+       110
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       10,
+       35
+      ],
+      "rows": [
+       35,
+       35
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev36",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "category_typos",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "type:signup_date",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 9.9,
+    "prompt_chars": 7717,
+    "score": {
+     "all": {
+      "cells": [
+       736,
+       837
+      ],
+      "rows": [
+       93,
+       93
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       46
+      ],
+      "rows": [
+       46,
+       46
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       28
+      ],
+      "rows": [
+       28,
+       28
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       27,
+       63
+      ],
+      "rows": [
+       7,
+       7
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev37",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "unit_mismatch",
+     "split_merge",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:order_date",
+     "allowed:category",
+     "type:quantity",
+     "type:unit_price",
+     "type:weight_kg"
+    ],
+    "ms": 8.5,
+    "prompt_chars": 6379,
+    "score": {
+     "all": {
+      "cells": [
+       587,
+       873
+      ],
+      "rows": [
+       97,
+       97
+      ],
+      "extra_rows": 0
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       59
+      ],
+      "rows": [
+       59,
+       59
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       194
+      ],
+      "rows": [
+       97,
+       97
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       2,
+       35
+      ],
+      "rows": [
+       35,
+       35
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev38",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "whitespace_encoding",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:stock",
+     "type:weight_kg",
+     "range:weight_kg"
+    ],
+    "ms": 10.9,
+    "prompt_chars": 6265,
+    "score": {
+     "all": {
+      "cells": [
+       506,
+       928
+      ],
+      "rows": [
+       116,
+       116
+      ],
+      "extra_rows": 0
+     },
+     "whitespace_encoding": {
+      "cells": [
+       20,
+       405
+      ],
+      "rows": [
+       116,
+       116
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       2,
+       43
+      ],
+      "rows": [
+       43,
+       43
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       32,
+       88
+      ],
+      "rows": [
+       11,
+       11
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev39",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "currency",
+     "unit_mismatch",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:lifetime_value"
+    ],
+    "ms": 8.6,
+    "prompt_chars": 7650,
+    "score": {
+     "all": {
+      "cells": [
+       350,
+       603
+      ],
+      "rows": [
+       67,
+       67
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       0,
+       44
+      ],
+      "rows": [
+       44,
+       44
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       88,
+       297
+      ],
+      "rows": [
+       67,
+       67
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1000",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "split_merge",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:order_date",
+     "allowed:category",
+     "type:quantity",
+     "type:unit_price",
+     "type:weight_kg",
+     "range:weight_kg"
+    ],
+    "ms": 14.2,
+    "prompt_chars": 6564,
+    "score": {
+     "all": {
+      "cells": [
+       832,
+       1251
+      ],
+      "rows": [
+       139,
+       139
+      ],
+      "extra_rows": 24
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       73
+      ],
+      "rows": [
+       71,
+       71
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       24,
+       24
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       326
+      ],
+      "rows": [
+       139,
+       139
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       9,
+       50
+      ],
+      "rows": [
+       50,
+       50
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       77,
+       171
+      ],
+      "rows": [
+       19,
+       19
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 24,
+      "f1": [
+       0,
+       24
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1001",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "unit_mismatch",
+     "split_merge",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:stock",
+     "type:unit_cost",
+     "type:last_restock",
+     "allowed:warehouse"
+    ],
+    "ms": 17.6,
+    "prompt_chars": 6952,
+    "score": {
+     "all": {
+      "cells": [
+       472,
+       1136
+      ],
+      "rows": [
+       142,
+       142
+      ],
+      "extra_rows": 38
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       91
+      ],
+      "rows": [
+       80,
+       80
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       38,
+       38
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       100
+      ],
+      "rows": [
+       88,
+       88
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       180
+      ],
+      "rows": [
+       142,
+       142
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       53,
+       593
+      ],
+      "rows": [
+       142,
+       142
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       4,
+       47
+      ],
+      "rows": [
+       47,
+       47
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 38,
+      "f1": [
+       0,
+       38
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1002",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "category_typos",
+     "unit_mismatch",
+     "whitespace_encoding",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:signup_date"
+    ],
+    "ms": 8.9,
+    "prompt_chars": 8019,
+    "score": {
+     "all": {
+      "cells": [
+       404,
+       774
+      ],
+      "rows": [
+       86,
+       86
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       53
+      ],
+      "rows": [
+       53,
+       53
+      ]
+     },
+     "currency": {
+      "cells": [
+       0,
+       52
+      ],
+      "rows": [
+       52,
+       52
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       28
+      ],
+      "rows": [
+       28,
+       28
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       118,
+       399
+      ],
+      "rows": [
+       86,
+       86
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       45,
+       153
+      ],
+      "rows": [
+       17,
+       17
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1003",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "mixed_dates",
+     "category_typos",
+     "near_duplicates",
+     "whitespace_encoding",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:quantity",
+     "range:weight_kg"
+    ],
+    "ms": 14.7,
+    "prompt_chars": 7304,
+    "score": {
+     "all": {
+      "cells": [
+       684,
+       1179
+      ],
+      "rows": [
+       131,
+       131
+      ],
+      "extra_rows": 21
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       77
+      ],
+      "rows": [
+       70,
+       70
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       62
+      ],
+      "rows": [
+       62,
+       62
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       21,
+       21
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       75,
+       561
+      ],
+      "rows": [
+       131,
+       131
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       39,
+       144
+      ],
+      "rows": [
+       16,
+       16
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 21,
+      "f1": [
+       0,
+       21
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1004",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "category_typos",
+     "near_duplicates",
+     "unit_mismatch",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:unit_cost",
+     "type:weight_kg",
+     "type:last_restock",
+     "allowed:warehouse"
+    ],
+    "ms": 15.4,
+    "prompt_chars": 7136,
+    "score": {
+     "all": {
+      "cells": [
+       239,
+       640
+      ],
+      "rows": [
+       80,
+       80
+      ],
+      "extra_rows": 8
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       45
+      ],
+      "rows": [
+       42,
+       42
+      ]
+     },
+     "currency": {
+      "cells": [
+       0,
+       51
+      ],
+      "rows": [
+       49,
+       49
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       66
+      ],
+      "rows": [
+       51,
+       51
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       8,
+       8
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       52
+      ],
+      "rows": [
+       47,
+       47
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       17,
+       293
+      ],
+      "rows": [
+       80,
+       80
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 8,
+      "f1": [
+       0,
+       8
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1005",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "unit_mismatch",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:signup_date",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 15.9,
+    "prompt_chars": 8024,
+    "score": {
+     "all": {
+      "cells": [
+       452,
+       774
+      ],
+      "rows": [
+       86,
+       86
+      ],
+      "extra_rows": 15
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       50
+      ],
+      "rows": [
+       47,
+       47
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       15,
+       15
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       99,
+       416
+      ],
+      "rows": [
+       86,
+       86
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       2,
+       32
+      ],
+      "rows": [
+       32,
+       32
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 15,
+      "f1": [
+       0,
+       15
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1006",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "category_typos",
+     "near_duplicates",
+     "split_merge",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:order_date",
+     "allowed:category",
+     "type:unit_price"
+    ],
+    "ms": 11.5,
+    "prompt_chars": 7743,
+    "score": {
+     "all": {
+      "cells": [
+       257,
+       918
+      ],
+      "rows": [
+       102,
+       102
+      ],
+      "extra_rows": 18
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       60
+      ],
+      "rows": [
+       52,
+       52
+      ]
+     },
+     "currency": {
+      "cells": [
+       0,
+       71
+      ],
+      "rows": [
+       65,
+       65
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       42
+      ],
+      "rows": [
+       40,
+       40
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       18,
+       18
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       240
+      ],
+      "rows": [
+       102,
+       102
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       15,
+       475
+      ],
+      "rows": [
+       102,
+       102
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 18,
+      "f1": [
+       0,
+       18
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1007",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "category_typos",
+     "unit_mismatch",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:weight_kg",
+     "type:last_restock"
+    ],
+    "ms": 16.0,
+    "prompt_chars": 7425,
+    "score": {
+     "all": {
+      "cells": [
+       570,
+       1192
+      ],
+      "rows": [
+       149,
+       149
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       81
+      ],
+      "rows": [
+       81,
+       81
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       96
+      ],
+      "rows": [
+       81,
+       81
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       94
+      ],
+      "rows": [
+       94,
+       94
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       0,
+       447
+      ],
+      "rows": [
+       149,
+       149
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1008",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "currency",
+     "near_duplicates",
+     "split_merge",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:lifetime_value"
+    ],
+    "ms": 19.1,
+    "prompt_chars": 6923,
+    "score": {
+     "all": {
+      "cells": [
+       337,
+       1269
+      ],
+      "rows": [
+       141,
+       141
+      ],
+      "extra_rows": 30
+     },
+     "currency": {
+      "cells": [
+       0,
+       105
+      ],
+      "rows": [
+       91,
+       91
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       30,
+       30
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       513
+      ],
+      "rows": [
+       141,
+       141
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       0,
+       713
+      ],
+      "rows": [
+       141,
+       141
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 30,
+      "f1": [
+       0,
+       30
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1009",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "currency",
+     "near_duplicates",
+     "unit_mismatch",
+     "whitespace_encoding",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:quantity",
+     "type:unit_price"
+    ],
+    "ms": 13.3,
+    "prompt_chars": 7042,
+    "score": {
+     "all": {
+      "cells": [
+       593,
+       1107
+      ],
+      "rows": [
+       123,
+       123
+      ],
+      "extra_rows": 19
+     },
+     "currency": {
+      "cells": [
+       0,
+       94
+      ],
+      "rows": [
+       88,
+       88
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       19,
+       19
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       86
+      ],
+      "rows": [
+       82,
+       82
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       118,
+       572
+      ],
+      "rows": [
+       123,
+       123
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       39,
+       153
+      ],
+      "rows": [
+       17,
+       17
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 19,
+      "f1": [
+       0,
+       19
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1010",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "category_typos",
+     "near_duplicates",
+     "unit_mismatch",
+     "split_merge",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:stock",
+     "type:weight_kg",
+     "type:last_restock",
+     "allowed:warehouse"
+    ],
+    "ms": 10.4,
+    "prompt_chars": 7617,
+    "score": {
+     "all": {
+      "cells": [
+       332,
+       744
+      ],
+      "rows": [
+       93,
+       93
+      ],
+      "extra_rows": 15
+     },
+     "category_typos": {
+      "cells": [
+       1,
+       71
+      ],
+      "rows": [
+       54,
+       54
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       15,
+       15
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       58
+      ],
+      "rows": [
+       50,
+       50
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       108
+      ],
+      "rows": [
+       93,
+       93
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       42,
+       289
+      ],
+      "rows": [
+       93,
+       93
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       3,
+       34
+      ],
+      "rows": [
+       34,
+       34
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 15,
+      "f1": [
+       0,
+       15
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1011",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "category_typos",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:signup_date",
+     "type:lifetime_value"
+    ],
+    "ms": 19.4,
+    "prompt_chars": 8381,
+    "score": {
+     "all": {
+      "cells": [
+       641,
+       1134
+      ],
+      "rows": [
+       126,
+       126
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       54
+      ],
+      "rows": [
+       54,
+       54
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       35
+      ],
+      "rows": [
+       35,
+       35
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       104,
+       513
+      ],
+      "rows": [
+       126,
+       126
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       5,
+       52
+      ],
+      "rows": [
+       52,
+       52
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1012",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "category_typos",
+     "split_merge",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:unit_price"
+    ],
+    "ms": 11.0,
+    "prompt_chars": 7459,
+    "score": {
+     "all": {
+      "cells": [
+       377,
+       1098
+      ],
+      "rows": [
+       122,
+       122
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       54
+      ],
+      "rows": [
+       54,
+       54
+      ]
+     },
+     "currency": {
+      "cells": [
+       0,
+       68
+      ],
+      "rows": [
+       68,
+       68
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       1,
+       37
+      ],
+      "rows": [
+       37,
+       37
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       244
+      ],
+      "rows": [
+       122,
+       122
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       68,
+       535
+      ],
+      "rows": [
+       122,
+       122
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1013",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "category_typos",
+     "near_duplicates",
+     "split_merge",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:stock",
+     "type:unit_cost",
+     "type:weight_kg",
+     "type:last_restock",
+     "allowed:warehouse"
+    ],
+    "ms": 9.4,
+    "prompt_chars": 7141,
+    "score": {
+     "all": {
+      "cells": [
+       482,
+       672
+      ],
+      "rows": [
+       84,
+       84
+      ],
+      "extra_rows": 18
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       72
+      ],
+      "rows": [
+       54,
+       54
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       18,
+       18
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       102
+      ],
+      "rows": [
+       84,
+       84
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       1,
+       28
+      ],
+      "rows": [
+       28,
+       28
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       18,
+       56
+      ],
+      "rows": [
+       6,
+       6
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 18,
+      "f1": [
+       0,
+       18
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1014",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "category_typos",
+     "unit_mismatch",
+     "split_merge",
+     "whitespace_encoding",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 13.3,
+    "prompt_chars": 7286,
+    "score": {
+     "all": {
+      "cells": [
+       422,
+       1134
+      ],
+      "rows": [
+       126,
+       126
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       78
+      ],
+      "rows": [
+       78,
+       78
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       46
+      ],
+      "rows": [
+       46,
+       46
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       378
+      ],
+      "rows": [
+       126,
+       126
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       69,
+       479
+      ],
+      "rows": [
+       126,
+       126
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       21,
+       144
+      ],
+      "rows": [
+       16,
+       16
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1015",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "category_typos",
+     "unit_mismatch"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "type:order_date",
+     "allowed:category",
+     "type:unit_price",
+     "type:weight_kg"
+    ],
+    "ms": 14.2,
+    "prompt_chars": 7358,
+    "score": {
+     "all": {
+      "cells": [
+       938,
+       1224
+      ],
+      "rows": [
+       136,
+       136
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       67
+      ],
+      "rows": [
+       67,
+       67
+      ]
+     },
+     "currency": {
+      "cells": [
+       0,
+       81
+      ],
+      "rows": [
+       81,
+       81
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       50
+      ],
+      "rows": [
+       50,
+       50
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       88
+      ],
+      "rows": [
+       88,
+       88
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1016",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "unit_mismatch",
+     "split_merge",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:stock",
+     "type:unit_cost",
+     "type:weight_kg",
+     "range:weight_kg",
+     "type:last_restock",
+     "allowed:warehouse"
+    ],
+    "ms": 13.7,
+    "prompt_chars": 6726,
+    "score": {
+     "all": {
+      "cells": [
+       682,
+       1024
+      ],
+      "rows": [
+       128,
+       128
+      ],
+      "extra_rows": 22
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       74
+      ],
+      "rows": [
+       67,
+       67
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       22,
+       22
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       84
+      ],
+      "rows": [
+       74,
+       74
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       150
+      ],
+      "rows": [
+       128,
+       128
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       15,
+       44
+      ],
+      "rows": [
+       44,
+       44
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       53,
+       144
+      ],
+      "rows": [
+       18,
+       18
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 22,
+      "f1": [
+       0,
+       22
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1017",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "currency",
+     "category_typos",
+     "near_duplicates",
+     "unit_mismatch",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "type:signup_date",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 17.0,
+    "prompt_chars": 8098,
+    "score": {
+     "all": {
+      "cells": [
+       1120,
+       1314
+      ],
+      "rows": [
+       146,
+       146
+      ],
+      "extra_rows": 17
+     },
+     "currency": {
+      "cells": [
+       0,
+       95
+      ],
+      "rows": [
+       91,
+       91
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       0,
+       54
+      ],
+      "rows": [
+       50,
+       50
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       17,
+       17
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       107,
+       198
+      ],
+      "rows": [
+       22,
+       22
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 17,
+      "f1": [
+       0,
+       17
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1018",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "currency",
+     "near_duplicates",
+     "unit_mismatch",
+     "split_merge",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:order_date",
+     "allowed:category",
+     "type:weight_kg"
+    ],
+    "ms": 13.1,
+    "prompt_chars": 7536,
+    "score": {
+     "all": {
+      "cells": [
+       433,
+       945
+      ],
+      "rows": [
+       105,
+       105
+      ],
+      "extra_rows": 22
+     },
+     "currency": {
+      "cells": [
+       0,
+       71
+      ],
+      "rows": [
+       67,
+       67
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       22,
+       22
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       80
+      ],
+      "rows": [
+       72,
+       72
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       254
+      ],
+      "rows": [
+       105,
+       105
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       83,
+       440
+      ],
+      "rows": [
+       105,
+       105
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       1,
+       33
+      ],
+      "rows": [
+       33,
+       33
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 22,
+      "f1": [
+       0,
+       22
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1019",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "allowed:category",
+     "type:stock",
+     "type:unit_cost",
+     "type:weight_kg",
+     "range:weight_kg",
+     "type:last_restock",
+     "allowed:warehouse"
+    ],
+    "ms": 13.1,
+    "prompt_chars": 6310,
+    "score": {
+     "all": {
+      "cells": [
+       910,
+       1048
+      ],
+      "rows": [
+       131,
+       131
+      ],
+      "extra_rows": 24
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       76
+      ],
+      "rows": [
+       71,
+       71
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       24,
+       24
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       5,
+       48
+      ],
+      "rows": [
+       48,
+       48
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       65,
+       120
+      ],
+      "rows": [
+       15,
+       15
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 24,
+      "f1": [
+       0,
+       24
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1020",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "currency",
+     "unit_mismatch",
+     "split_merge",
+     "whitespace_encoding",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "type:signup_date",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 9.3,
+    "prompt_chars": 6980,
+    "score": {
+     "all": {
+      "cells": [
+       444,
+       783
+      ],
+      "rows": [
+       87,
+       87
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       0,
+       45
+      ],
+      "rows": [
+       45,
+       45
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       261
+      ],
+      "rows": [
+       87,
+       87
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       76,
+       178
+      ],
+      "rows": [
+       80,
+       80
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       6,
+       28
+      ],
+      "rows": [
+       28,
+       28
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       8,
+       36
+      ],
+      "rows": [
+       4,
+       4
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1021",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "mixed_dates",
+     "split_merge",
+     "whitespace_encoding",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "range:weight_kg"
+    ],
+    "ms": 9.2,
+    "prompt_chars": 6824,
+    "score": {
+     "all": {
+      "cells": [
+       373,
+       891
+      ],
+      "rows": [
+       99,
+       99
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       45
+      ],
+      "rows": [
+       45,
+       45
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       198
+      ],
+      "rows": [
+       99,
+       99
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       26,
+       409
+      ],
+      "rows": [
+       99,
+       99
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       13,
+       63
+      ],
+      "rows": [
+       7,
+       7
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1022",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "unit_mismatch",
+     "split_merge",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "columns",
+     "allowed:category",
+     "type:stock",
+     "type:unit_cost",
+     "type:weight_kg",
+     "range:weight_kg",
+     "type:last_restock",
+     "allowed:warehouse"
+    ],
+    "ms": 13.5,
+    "prompt_chars": 6671,
+    "score": {
+     "all": {
+      "cells": [
+       707,
+       1120
+      ],
+      "rows": [
+       140,
+       140
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       77
+      ],
+      "rows": [
+       77,
+       77
+      ]
+     },
+     "currency": {
+      "cells": [
+       0,
+       82
+      ],
+      "rows": [
+       82,
+       82
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       76
+      ],
+      "rows": [
+       76,
+       76
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       0,
+       140
+      ],
+      "rows": [
+       140,
+       140
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       39,
+       120
+      ],
+      "rows": [
+       15,
+       15
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1023",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "near_duplicates",
+     "unit_mismatch",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 0,
+    "checks_failed": [
+     "type:signup_date",
+     "allowed:segment",
+     "type:lifetime_value"
+    ],
+    "ms": 17.5,
+    "prompt_chars": 8130,
+    "score": {
+     "all": {
+      "cells": [
+       1063,
+       1314
+      ],
+      "rows": [
+       146,
+       146
+      ],
+      "extra_rows": 32
+     },
+     "mixed_dates": {
+      "cells": [
+       0,
+       80
+      ],
+      "rows": [
+       75,
+       75
+      ]
+     },
+     "currency": {
+      "cells": [
+       0,
+       103
+      ],
+      "rows": [
+       94,
+       94
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       32,
+       32
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       9,
+       52
+      ],
+      "rows": [
+       52,
+       52
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       69,
+       162
+      ],
+      "rows": [
+       17,
+       17
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 32,
+      "f1": [
+       0,
+       32
+      ]
+     }
+    }
+   }
+  ],
+  "rules": [
+   {
+    "name": "dev00",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "currency",
+     "category_typos",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 23.5,
+    "prompt_chars": 7821,
+    "score": {
+     "all": {
+      "cells": [
+       612,
+       612
+      ],
+      "rows": [
+       68,
+       69
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       36,
+       36
+      ],
+      "rows": [
+       36,
+       36
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       17,
+       17
+      ],
+      "rows": [
+       17,
+       17
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       22,
+       22
+      ],
+      "rows": [
+       22,
+       22
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "f1": [
+       0,
+       1
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev01",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "near_duplicates"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 373.2,
+    "prompt_chars": 6767,
+    "score": {
+     "all": {
+      "cells": [
+       918,
+       918
+      ],
+      "rows": [
+       102,
+       102
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       46,
+       46
+      ],
+      "rows": [
+       48,
+       48
+      ]
+     },
+     "currency": {
+      "cells": [
+       59,
+       59
+      ],
+      "rows": [
+       61,
+       61
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       8,
+       8
+      ]
+     },
+     "dups": {
+      "tp": 8,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       16,
+       16
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev02",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "unit_mismatch",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 20.3,
+    "prompt_chars": 6250,
+    "score": {
+     "all": {
+      "cells": [
+       816,
+       816
+      ],
+      "rows": [
+       102,
+       116
+      ],
+      "extra_rows": 0
+     },
+     "unit_mismatch": {
+      "cells": [
+       49,
+       49
+      ],
+      "rows": [
+       49,
+       58
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       31,
+       31
+      ],
+      "rows": [
+       31,
+       34
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       13
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "f1": [
+       0,
+       1
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev03",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "unit_mismatch",
+     "whitespace_encoding",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 18.7,
+    "prompt_chars": 7565,
+    "score": {
+     "all": {
+      "cells": [
+       693,
+       693
+      ],
+      "rows": [
+       77,
+       84
+      ],
+      "extra_rows": 0
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       342,
+       342
+      ],
+      "rows": [
+       77,
+       84
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       7
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev04",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "category_typos",
+     "unit_mismatch",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 214.5,
+    "prompt_chars": 7097,
+    "score": {
+     "all": {
+      "cells": [
+       783,
+       783
+      ],
+      "rows": [
+       87,
+       87
+      ],
+      "extra_rows": 0
+     },
+     "category_typos": {
+      "cells": [
+       26,
+       26
+      ],
+      "rows": [
+       26,
+       26
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       53,
+       53
+      ],
+      "rows": [
+       53,
+       53
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       27,
+       27
+      ],
+      "rows": [
+       27,
+       27
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev05",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 5,
+    "checks_failed": [],
+    "ms": 23.2,
+    "prompt_chars": 6216,
+    "score": {
+     "all": {
+      "cells": [
+       784,
+       784
+      ],
+      "rows": [
+       98,
+       98
+      ],
+      "extra_rows": 1
+     },
+     "mixed_dates": {
+      "cells": [
+       53,
+       53
+      ],
+      "rows": [
+       55,
+       55
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       11,
+       11
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       358,
+       358
+      ],
+      "rows": [
+       98,
+       98
+      ]
+     },
+     "dups": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 1,
+      "f1": [
+       20,
+       21
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev06",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "unit_mismatch",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 3,
+    "checks_failed": [],
+    "ms": 19.6,
+    "prompt_chars": 7458,
+    "score": {
+     "all": {
+      "cells": [
+       774,
+       774
+      ],
+      "rows": [
+       86,
+       95
+      ],
+      "extra_rows": 0
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       24,
+       24
+      ],
+      "rows": [
+       24,
+       29
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       9
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev07",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "whitespace_encoding",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 6,
+    "checks_failed": [],
+    "ms": 201.0,
+    "prompt_chars": 6694,
+    "score": {
+     "all": {
+      "cells": [
+       792,
+       792
+      ],
+      "rows": [
+       88,
+       103
+      ],
+      "extra_rows": 0
+     },
+     "whitespace_encoding": {
+      "cells": [
+       339,
+       339
+      ],
+      "rows": [
+       88,
+       103
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       25,
+       25
+      ],
+      "rows": [
+       25,
+       32
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       15
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev08",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "split_merge",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 6,
+    "checks_failed": [],
+    "ms": 21.4,
+    "prompt_chars": 6599,
+    "score": {
+     "all": {
+      "cells": [
+       816,
+       816
+      ],
+      "rows": [
+       102,
+       102
+      ],
+      "extra_rows": 0
+     },
+     "split_merge": {
+      "cells": [
+       102,
+       102
+      ],
+      "rows": [
+       102,
+       102
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       418,
+       418
+      ],
+      "rows": [
+       102,
+       102
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       27,
+       27
+      ],
+      "rows": [
+       27,
+       27
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev09",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 17.2,
+    "prompt_chars": 7571,
+    "score": {
+     "all": {
+      "cells": [
+       621,
+       621
+      ],
+      "rows": [
+       69,
+       76
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       34,
+       34
+      ],
+      "rows": [
+       34,
+       39
+      ]
+     },
+     "currency": {
+      "cells": [
+       44,
+       44
+      ],
+      "rows": [
+       44,
+       50
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       7
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev10",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "category_typos",
+     "near_duplicates",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 216.1,
+    "prompt_chars": 6990,
+    "score": {
+     "all": {
+      "cells": [
+       711,
+       711
+      ],
+      "rows": [
+       79,
+       80
+      ],
+      "extra_rows": 0
+     },
+     "category_typos": {
+      "cells": [
+       25,
+       25
+      ],
+      "rows": [
+       27,
+       27
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       14,
+       14
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       306,
+       306
+      ],
+      "rows": [
+       79,
+       80
+      ]
+     },
+     "dups": {
+      "tp": 14,
+      "fp": 1,
+      "fn": 0,
+      "f1": [
+       28,
+       29
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev11",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "category_typos",
+     "split_merge",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 5,
+    "checks_failed": [],
+    "ms": 17.8,
+    "prompt_chars": 6857,
+    "score": {
+     "all": {
+      "cells": [
+       592,
+       592
+      ],
+      "rows": [
+       74,
+       81
+      ],
+      "extra_rows": 0
+     },
+     "category_typos": {
+      "cells": [
+       53,
+       53
+      ],
+      "rows": [
+       45,
+       50
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       74,
+       74
+      ],
+      "rows": [
+       74,
+       81
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       7
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev12",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "split_merge",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 5,
+    "checks_failed": [],
+    "ms": 22.1,
+    "prompt_chars": 6771,
+    "score": {
+     "all": {
+      "cells": [
+       630,
+       630
+      ],
+      "rows": [
+       70,
+       75
+      ],
+      "extra_rows": 0
+     },
+     "split_merge": {
+      "cells": [
+       210,
+       210
+      ],
+      "rows": [
+       70,
+       75
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       24,
+       24
+      ],
+      "rows": [
+       24,
+       25
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       5
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev13",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "near_duplicates",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 333.9,
+    "prompt_chars": 6781,
+    "score": {
+     "all": {
+      "cells": [
+       972,
+       972
+      ],
+      "rows": [
+       108,
+       120
+      ],
+      "extra_rows": 0
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       10,
+       11
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       29,
+       29
+      ],
+      "rows": [
+       29,
+       32
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       1,
+       13
+      ]
+     },
+     "dups": {
+      "tp": 9,
+      "fp": 0,
+      "fn": 2,
+      "f1": [
+       18,
+       20
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev14",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "category_typos",
+     "near_duplicates",
+     "unit_mismatch"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 14.6,
+    "prompt_chars": 6860,
+    "score": {
+     "all": {
+      "cells": [
+       560,
+       560
+      ],
+      "rows": [
+       70,
+       70
+      ],
+      "extra_rows": 1
+     },
+     "category_typos": {
+      "cells": [
+       50,
+       50
+      ],
+      "rows": [
+       46,
+       46
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       11,
+       11
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       43,
+       43
+      ],
+      "rows": [
+       45,
+       45
+      ]
+     },
+     "dups": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 1,
+      "f1": [
+       20,
+       21
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev15",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "currency",
+     "category_typos",
+     "near_duplicates"
+    ],
+    "plan_errors": [],
+    "ops": 3,
+    "checks_failed": [],
+    "ms": 42.4,
+    "prompt_chars": 8286,
+    "score": {
+     "all": {
+      "cells": [
+       1053,
+       1053
+      ],
+      "rows": [
+       117,
+       117
+      ],
+      "extra_rows": 1
+     },
+     "currency": {
+      "cells": [
+       64,
+       64
+      ],
+      "rows": [
+       74,
+       74
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       40,
+       40
+      ],
+      "rows": [
+       46,
+       46
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       25,
+       25
+      ]
+     },
+     "dups": {
+      "tp": 24,
+      "fp": 0,
+      "fn": 1,
+      "f1": [
+       48,
+       49
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev16",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "currency",
+     "category_typos",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 301.6,
+    "prompt_chars": 6899,
+    "score": {
+     "all": {
+      "cells": [
+       927,
+       927
+      ],
+      "rows": [
+       103,
+       109
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       66,
+       66
+      ],
+      "rows": [
+       66,
+       69
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       29,
+       29
+      ],
+      "rows": [
+       29,
+       30
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       5
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "f1": [
+       0,
+       1
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev17",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "unit_mismatch"
+    ],
+    "plan_errors": [],
+    "ops": 3,
+    "checks_failed": [],
+    "ms": 16.2,
+    "prompt_chars": 6222,
+    "score": {
+     "all": {
+      "cells": [
+       592,
+       592
+      ],
+      "rows": [
+       74,
+       74
+      ],
+      "extra_rows": 1
+     },
+     "mixed_dates": {
+      "cells": [
+       36,
+       36
+      ],
+      "rows": [
+       39,
+       39
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       10,
+       10
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       42,
+       42
+      ],
+      "rows": [
+       42,
+       42
+      ]
+     },
+     "dups": {
+      "tp": 9,
+      "fp": 0,
+      "fn": 1,
+      "f1": [
+       18,
+       19
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev18",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "near_duplicates",
+     "split_merge",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 15.2,
+    "prompt_chars": 7391,
+    "score": {
+     "all": {
+      "cells": [
+       576,
+       576
+      ],
+      "rows": [
+       64,
+       64
+      ],
+      "extra_rows": 0
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       10,
+       10
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       192,
+       192
+      ],
+      "rows": [
+       64,
+       64
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       14,
+       14
+      ],
+      "rows": [
+       14,
+       14
+      ]
+     },
+     "dups": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       20,
+       20
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev19",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "currency",
+     "category_typos",
+     "split_merge"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 191.6,
+    "prompt_chars": 6573,
+    "score": {
+     "all": {
+      "cells": [
+       774,
+       774
+      ],
+      "rows": [
+       86,
+       86
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       60,
+       60
+      ],
+      "rows": [
+       60,
+       60
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       26,
+       26
+      ],
+      "rows": [
+       26,
+       26
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       172,
+       172
+      ],
+      "rows": [
+       86,
+       86
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev20",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "currency",
+     "near_duplicates",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 5,
+    "checks_failed": [],
+    "ms": 27.3,
+    "prompt_chars": 6249,
+    "score": {
+     "all": {
+      "cells": [
+       872,
+       872
+      ],
+      "rows": [
+       109,
+       109
+      ],
+      "extra_rows": 3
+     },
+     "currency": {
+      "cells": [
+       69,
+       69
+      ],
+      "rows": [
+       69,
+       69
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       13,
+       13
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       376,
+       379
+      ],
+      "rows": [
+       109,
+       109
+      ]
+     },
+     "dups": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 3,
+      "f1": [
+       20,
+       23
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev21",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "near_duplicates",
+     "unit_mismatch",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 3,
+    "checks_failed": [],
+    "ms": 33.2,
+    "prompt_chars": 7711,
+    "score": {
+     "all": {
+      "cells": [
+       891,
+       891
+      ],
+      "rows": [
+       99,
+       99
+      ],
+      "extra_rows": 0
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       13,
+       13
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       418,
+       418
+      ],
+      "rows": [
+       99,
+       99
+      ]
+     },
+     "dups": {
+      "tp": 13,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       26,
+       26
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev22",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "near_duplicates",
+     "split_merge",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 349.9,
+    "prompt_chars": 6619,
+    "score": {
+     "all": {
+      "cells": [
+       1044,
+       1044
+      ],
+      "rows": [
+       116,
+       116
+      ],
+      "extra_rows": 0
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       21,
+       21
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       232,
+       232
+      ],
+      "rows": [
+       116,
+       116
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       39,
+       39
+      ],
+      "rows": [
+       39,
+       39
+      ]
+     },
+     "dups": {
+      "tp": 21,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       42,
+       42
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev23",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "near_duplicates",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 5,
+    "checks_failed": [],
+    "ms": 31.3,
+    "prompt_chars": 6271,
+    "score": {
+     "all": {
+      "cells": [
+       880,
+       880
+      ],
+      "rows": [
+       110,
+       110
+      ],
+      "extra_rows": 1
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       17,
+       17
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       386,
+       387
+      ],
+      "rows": [
+       110,
+       110
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       29,
+       29
+      ],
+      "rows": [
+       29,
+       29
+      ]
+     },
+     "dups": {
+      "tp": 16,
+      "fp": 0,
+      "fn": 1,
+      "f1": [
+       32,
+       33
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev24",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "split_merge",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 5,
+    "checks_failed": [],
+    "ms": 25.0,
+    "prompt_chars": 6834,
+    "score": {
+     "all": {
+      "cells": [
+       684,
+       684
+      ],
+      "rows": [
+       76,
+       84
+      ],
+      "extra_rows": 0
+     },
+     "split_merge": {
+      "cells": [
+       228,
+       228
+      ],
+      "rows": [
+       76,
+       84
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       21,
+       21
+      ],
+      "rows": [
+       21,
+       23
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       8
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev25",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "near_duplicates",
+     "unit_mismatch",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 224.4,
+    "prompt_chars": 7881,
+    "score": {
+     "all": {
+      "cells": [
+       774,
+       774
+      ],
+      "rows": [
+       86,
+       86
+      ],
+      "extra_rows": 0
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       15,
+       15
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       53,
+       53
+      ],
+      "rows": [
+       56,
+       56
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       19,
+       19
+      ],
+      "rows": [
+       19,
+       19
+      ]
+     },
+     "dups": {
+      "tp": 15,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       30,
+       30
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev26",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "split_merge",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 6,
+    "checks_failed": [],
+    "ms": 19.9,
+    "prompt_chars": 6526,
+    "score": {
+     "all": {
+      "cells": [
+       608,
+       608
+      ],
+      "rows": [
+       76,
+       76
+      ],
+      "extra_rows": 0
+     },
+     "split_merge": {
+      "cells": [
+       76,
+       76
+      ],
+      "rows": [
+       76,
+       76
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       202,
+       202
+      ],
+      "rows": [
+       76,
+       76
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       19,
+       19
+      ],
+      "rows": [
+       19,
+       19
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev27",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "unit_mismatch",
+     "split_merge",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 28.7,
+    "prompt_chars": 6766,
+    "score": {
+     "all": {
+      "cells": [
+       783,
+       783
+      ],
+      "rows": [
+       87,
+       87
+      ],
+      "extra_rows": 0
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       261,
+       261
+      ],
+      "rows": [
+       87,
+       87
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       29,
+       29
+      ],
+      "rows": [
+       29,
+       29
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev28",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "unit_mismatch",
+     "split_merge",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 180.5,
+    "prompt_chars": 6188,
+    "score": {
+     "all": {
+      "cells": [
+       693,
+       693
+      ],
+      "rows": [
+       77,
+       86
+      ],
+      "extra_rows": 0
+     },
+     "unit_mismatch": {
+      "cells": [
+       50,
+       50
+      ],
+      "rows": [
+       50,
+       57
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       154,
+       154
+      ],
+      "rows": [
+       77,
+       86
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       9
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev29",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "category_typos",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 5,
+    "checks_failed": [],
+    "ms": 17.6,
+    "prompt_chars": 6746,
+    "score": {
+     "all": {
+      "cells": [
+       568,
+       568
+      ],
+      "rows": [
+       71,
+       77
+      ],
+      "extra_rows": 0
+     },
+     "category_typos": {
+      "cells": [
+       47,
+       47
+      ],
+      "rows": [
+       39,
+       43
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       20,
+       20
+      ],
+      "rows": [
+       20,
+       22
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       5
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "f1": [
+       0,
+       1
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev30",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 3,
+    "checks_failed": [],
+    "ms": 19.4,
+    "prompt_chars": 7638,
+    "score": {
+     "all": {
+      "cells": [
+       549,
+       549
+      ],
+      "rows": [
+       61,
+       61
+      ],
+      "extra_rows": 2
+     },
+     "mixed_dates": {
+      "cells": [
+       30,
+       30
+      ],
+      "rows": [
+       32,
+       32
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       12,
+       12
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       25,
+       25
+      ],
+      "rows": [
+       25,
+       25
+      ]
+     },
+     "dups": {
+      "tp": 10,
+      "fp": 0,
+      "fn": 2,
+      "f1": [
+       20,
+       22
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev31",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "category_typos",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 5,
+    "checks_failed": [],
+    "ms": 137.8,
+    "prompt_chars": 6929,
+    "score": {
+     "all": {
+      "cells": [
+       675,
+       675
+      ],
+      "rows": [
+       75,
+       75
+      ],
+      "extra_rows": 0
+     },
+     "category_typos": {
+      "cells": [
+       23,
+       23
+      ],
+      "rows": [
+       23,
+       23
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       275,
+       275
+      ],
+      "rows": [
+       75,
+       75
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       27,
+       27
+      ],
+      "rows": [
+       27,
+       27
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev32",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "category_typos",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 5,
+    "checks_failed": [],
+    "ms": 12.2,
+    "prompt_chars": 6573,
+    "score": {
+     "all": {
+      "cells": [
+       464,
+       464
+      ],
+      "rows": [
+       58,
+       70
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       28,
+       28
+      ],
+      "rows": [
+       28,
+       37
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       38,
+       38
+      ],
+      "rows": [
+       30,
+       37
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       11
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "f1": [
+       0,
+       1
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev33",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "currency",
+     "whitespace_encoding",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 5,
+    "checks_failed": [],
+    "ms": 16.0,
+    "prompt_chars": 7630,
+    "score": {
+     "all": {
+      "cells": [
+       549,
+       549
+      ],
+      "rows": [
+       61,
+       72
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       31,
+       31
+      ],
+      "rows": [
+       31,
+       35
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       278,
+       278
+      ],
+      "rows": [
+       61,
+       72
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       11
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev34",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "category_typos",
+     "split_merge",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 190.4,
+    "prompt_chars": 6410,
+    "score": {
+     "all": {
+      "cells": [
+       747,
+       747
+      ],
+      "rows": [
+       83,
+       88
+      ],
+      "extra_rows": 0
+     },
+     "category_typos": {
+      "cells": [
+       33,
+       33
+      ],
+      "rows": [
+       33,
+       34
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       166,
+       166
+      ],
+      "rows": [
+       83,
+       88
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       5
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev35",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "split_merge",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 26.2,
+    "prompt_chars": 6582,
+    "score": {
+     "all": {
+      "cells": [
+       872,
+       872
+      ],
+      "rows": [
+       109,
+       110
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       54,
+       54
+      ],
+      "rows": [
+       54,
+       54
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       109,
+       109
+      ],
+      "rows": [
+       109,
+       110
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       34,
+       34
+      ],
+      "rows": [
+       34,
+       35
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "f1": [
+       0,
+       1
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev36",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "category_typos",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 22.9,
+    "prompt_chars": 7717,
+    "score": {
+     "all": {
+      "cells": [
+       774,
+       774
+      ],
+      "rows": [
+       86,
+       93
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       40,
+       40
+      ],
+      "rows": [
+       40,
+       46
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       25,
+       25
+      ],
+      "rows": [
+       25,
+       28
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       7
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev37",
+    "split": "dev",
+    "kind": "orders",
+    "messes": [
+     "unit_mismatch",
+     "split_merge",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 217.9,
+    "prompt_chars": 6379,
+    "score": {
+     "all": {
+      "cells": [
+       864,
+       864
+      ],
+      "rows": [
+       96,
+       97
+      ],
+      "extra_rows": 0
+     },
+     "unit_mismatch": {
+      "cells": [
+       58,
+       58
+      ],
+      "rows": [
+       58,
+       59
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       192,
+       192
+      ],
+      "rows": [
+       96,
+       97
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       35,
+       35
+      ],
+      "rows": [
+       35,
+       35
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "f1": [
+       0,
+       1
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev38",
+    "split": "dev",
+    "kind": "inventory",
+    "messes": [
+     "whitespace_encoding",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 6,
+    "checks_failed": [],
+    "ms": 21.1,
+    "prompt_chars": 6265,
+    "score": {
+     "all": {
+      "cells": [
+       840,
+       840
+      ],
+      "rows": [
+       105,
+       116
+      ],
+      "extra_rows": 0
+     },
+     "whitespace_encoding": {
+      "cells": [
+       368,
+       368
+      ],
+      "rows": [
+       105,
+       116
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       37,
+       37
+      ],
+      "rows": [
+       37,
+       43
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       11
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "dev39",
+    "split": "dev",
+    "kind": "customers",
+    "messes": [
+     "currency",
+     "unit_mismatch",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [],
+    "ms": 16.3,
+    "prompt_chars": 7650,
+    "score": {
+     "all": {
+      "cells": [
+       594,
+       594
+      ],
+      "rows": [
+       66,
+       67
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       43,
+       43
+      ],
+      "rows": [
+       43,
+       44
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       292,
+       292
+      ],
+      "rows": [
+       66,
+       67
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "f1": [
+       0,
+       1
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1000",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "split_merge",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 6,
+    "checks_failed": [
+     "row_count"
+    ],
+    "ms": 387.4,
+    "prompt_chars": 6564,
+    "score": {
+     "all": {
+      "cells": [
+       1131,
+       1134
+      ],
+      "rows": [
+       126,
+       139
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       57,
+       57
+      ],
+      "rows": [
+       65,
+       71
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       24,
+       24
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       252,
+       252
+      ],
+      "rows": [
+       126,
+       139
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       43,
+       43
+      ],
+      "rows": [
+       45,
+       50
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       6,
+       19
+      ]
+     },
+     "dups": {
+      "tp": 18,
+      "fp": 0,
+      "fn": 6,
+      "f1": [
+       36,
+       42
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1001",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "unit_mismatch",
+     "split_merge",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 8,
+    "checks_failed": [],
+    "ms": 50.7,
+    "prompt_chars": 6952,
+    "score": {
+     "all": {
+      "cells": [
+       1128,
+       1128
+      ],
+      "rows": [
+       141,
+       142
+      ],
+      "extra_rows": 5
+     },
+     "mixed_dates": {
+      "cells": [
+       76,
+       76
+      ],
+      "rows": [
+       80,
+       80
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       38,
+       38
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       83,
+       83
+      ],
+      "rows": [
+       87,
+       88
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       141,
+       146
+      ],
+      "rows": [
+       141,
+       142
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       475,
+       480
+      ],
+      "rows": [
+       141,
+       142
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       46,
+       46
+      ],
+      "rows": [
+       46,
+       47
+      ]
+     },
+     "dups": {
+      "tp": 33,
+      "fp": 1,
+      "fn": 5,
+      "f1": [
+       66,
+       72
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1002",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "category_typos",
+     "unit_mismatch",
+     "whitespace_encoding",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 7,
+    "checks_failed": [],
+    "ms": 19.3,
+    "prompt_chars": 8019,
+    "score": {
+     "all": {
+      "cells": [
+       621,
+       621
+      ],
+      "rows": [
+       69,
+       86
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       44,
+       44
+      ],
+      "rows": [
+       44,
+       53
+      ]
+     },
+     "currency": {
+      "cells": [
+       44,
+       44
+      ],
+      "rows": [
+       44,
+       52
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       25,
+       25
+      ],
+      "rows": [
+       25,
+       28
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       324,
+       324
+      ],
+      "rows": [
+       69,
+       86
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       17
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1003",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "mixed_dates",
+     "category_typos",
+     "near_duplicates",
+     "whitespace_encoding",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 6,
+    "checks_failed": [
+     "row_count"
+    ],
+    "ms": 459.4,
+    "prompt_chars": 7304,
+    "score": {
+     "all": {
+      "cells": [
+       1067,
+       1071
+      ],
+      "rows": [
+       119,
+       131
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       61,
+       61
+      ],
+      "rows": [
+       64,
+       70
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       47,
+       47
+      ],
+      "rows": [
+       57,
+       62
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       21,
+       21
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       443,
+       443
+      ],
+      "rows": [
+       119,
+       131
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       5,
+       16
+      ]
+     },
+     "dups": {
+      "tp": 16,
+      "fp": 1,
+      "fn": 5,
+      "f1": [
+       32,
+       38
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1004",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "category_typos",
+     "near_duplicates",
+     "unit_mismatch",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 8,
+    "checks_failed": [],
+    "ms": 20.4,
+    "prompt_chars": 7136,
+    "score": {
+     "all": {
+      "cells": [
+       640,
+       640
+      ],
+      "rows": [
+       80,
+       80
+      ],
+      "extra_rows": 1
+     },
+     "mixed_dates": {
+      "cells": [
+       42,
+       42
+      ],
+      "rows": [
+       42,
+       42
+      ]
+     },
+     "currency": {
+      "cells": [
+       48,
+       48
+      ],
+      "rows": [
+       49,
+       49
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       63,
+       63
+      ],
+      "rows": [
+       51,
+       51
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       8,
+       8
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       46,
+       46
+      ],
+      "rows": [
+       47,
+       47
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       269,
+       270
+      ],
+      "rows": [
+       80,
+       80
+      ]
+     },
+     "dups": {
+      "tp": 7,
+      "fp": 0,
+      "fn": 1,
+      "f1": [
+       14,
+       15
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1005",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "unit_mismatch",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 5,
+    "checks_failed": [],
+    "ms": 26.1,
+    "prompt_chars": 8024,
+    "score": {
+     "all": {
+      "cells": [
+       765,
+       765
+      ],
+      "rows": [
+       85,
+       86
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       37,
+       37
+      ],
+      "rows": [
+       46,
+       47
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       15,
+       15
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       352,
+       352
+      ],
+      "rows": [
+       85,
+       86
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       32,
+       32
+      ],
+      "rows": [
+       32,
+       32
+      ]
+     },
+     "dups": {
+      "tp": 15,
+      "fp": 1,
+      "fn": 0,
+      "f1": [
+       30,
+       31
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1006",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "category_typos",
+     "near_duplicates",
+     "split_merge",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 7,
+    "checks_failed": [],
+    "ms": 314.3,
+    "prompt_chars": 7743,
+    "score": {
+     "all": {
+      "cells": [
+       909,
+       909
+      ],
+      "rows": [
+       101,
+       102
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       48,
+       48
+      ],
+      "rows": [
+       51,
+       52
+      ]
+     },
+     "currency": {
+      "cells": [
+       61,
+       61
+      ],
+      "rows": [
+       64,
+       65
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       38,
+       38
+      ],
+      "rows": [
+       39,
+       40
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       17,
+       18
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       202,
+       202
+      ],
+      "rows": [
+       101,
+       102
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       401,
+       401
+      ],
+      "rows": [
+       101,
+       102
+      ]
+     },
+     "dups": {
+      "tp": 17,
+      "fp": 2,
+      "fn": 1,
+      "f1": [
+       34,
+       37
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1007",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "category_typos",
+     "unit_mismatch",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 7,
+    "checks_failed": [],
+    "ms": 54.2,
+    "prompt_chars": 7425,
+    "score": {
+     "all": {
+      "cells": [
+       1192,
+       1192
+      ],
+      "rows": [
+       149,
+       149
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       81,
+       81
+      ],
+      "rows": [
+       81,
+       81
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       96,
+       96
+      ],
+      "rows": [
+       81,
+       81
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       94,
+       94
+      ],
+      "rows": [
+       94,
+       94
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       447,
+       447
+      ],
+      "rows": [
+       149,
+       149
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1008",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "currency",
+     "near_duplicates",
+     "split_merge",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 6,
+    "checks_failed": [],
+    "ms": 81.4,
+    "prompt_chars": 6923,
+    "score": {
+     "all": {
+      "cells": [
+       1265,
+       1269
+      ],
+      "rows": [
+       141,
+       141
+      ],
+      "extra_rows": 5
+     },
+     "currency": {
+      "cells": [
+       88,
+       88
+      ],
+      "rows": [
+       91,
+       91
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       30,
+       30
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       429,
+       438
+      ],
+      "rows": [
+       141,
+       141
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       603,
+       609
+      ],
+      "rows": [
+       141,
+       141
+      ]
+     },
+     "dups": {
+      "tp": 25,
+      "fp": 0,
+      "fn": 5,
+      "f1": [
+       50,
+       55
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1009",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "currency",
+     "near_duplicates",
+     "unit_mismatch",
+     "whitespace_encoding",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 7,
+    "checks_failed": [
+     "row_count"
+    ],
+    "ms": 412.2,
+    "prompt_chars": 7042,
+    "score": {
+     "all": {
+      "cells": [
+       994,
+       999
+      ],
+      "rows": [
+       111,
+       123
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       77,
+       77
+      ],
+      "rows": [
+       81,
+       88
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       19,
+       19
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       66,
+       66
+      ],
+      "rows": [
+       74,
+       82
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       442,
+       442
+      ],
+      "rows": [
+       111,
+       123
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       5,
+       17
+      ]
+     },
+     "dups": {
+      "tp": 14,
+      "fp": 0,
+      "fn": 5,
+      "f1": [
+       28,
+       33
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1010",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "category_typos",
+     "near_duplicates",
+     "unit_mismatch",
+     "split_merge",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 8,
+    "checks_failed": [],
+    "ms": 25.0,
+    "prompt_chars": 7617,
+    "score": {
+     "all": {
+      "cells": [
+       744,
+       744
+      ],
+      "rows": [
+       93,
+       93
+      ],
+      "extra_rows": 2
+     },
+     "category_typos": {
+      "cells": [
+       62,
+       62
+      ],
+      "rows": [
+       54,
+       54
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       15,
+       15
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       49,
+       49
+      ],
+      "rows": [
+       50,
+       50
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       93,
+       95
+      ],
+      "rows": [
+       93,
+       93
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       253,
+       255
+      ],
+      "rows": [
+       93,
+       93
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       34,
+       34
+      ],
+      "rows": [
+       34,
+       34
+      ]
+     },
+     "dups": {
+      "tp": 13,
+      "fp": 0,
+      "fn": 2,
+      "f1": [
+       26,
+       28
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1011",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "category_typos",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 6,
+    "checks_failed": [],
+    "ms": 38.7,
+    "prompt_chars": 8381,
+    "score": {
+     "all": {
+      "cells": [
+       1134,
+       1134
+      ],
+      "rows": [
+       126,
+       126
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       54,
+       54
+      ],
+      "rows": [
+       54,
+       54
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       35,
+       35
+      ],
+      "rows": [
+       35,
+       35
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       513,
+       513
+      ],
+      "rows": [
+       126,
+       126
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       52,
+       52
+      ],
+      "rows": [
+       52,
+       52
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1012",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "category_typos",
+     "split_merge",
+     "whitespace_encoding"
+    ],
+    "plan_errors": [],
+    "ops": 7,
+    "checks_failed": [],
+    "ms": 399.3,
+    "prompt_chars": 7459,
+    "score": {
+     "all": {
+      "cells": [
+       1098,
+       1098
+      ],
+      "rows": [
+       122,
+       122
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       54,
+       54
+      ],
+      "rows": [
+       54,
+       54
+      ]
+     },
+     "currency": {
+      "cells": [
+       68,
+       68
+      ],
+      "rows": [
+       68,
+       68
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       37,
+       37
+      ],
+      "rows": [
+       37,
+       37
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       244,
+       244
+      ],
+      "rows": [
+       122,
+       122
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       535,
+       535
+      ],
+      "rows": [
+       122,
+       122
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1013",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "category_typos",
+     "near_duplicates",
+     "split_merge",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 7,
+    "checks_failed": [
+     "row_count"
+    ],
+    "ms": 33.4,
+    "prompt_chars": 7141,
+    "score": {
+     "all": {
+      "cells": [
+       630,
+       632
+      ],
+      "rows": [
+       79,
+       84
+      ],
+      "extra_rows": 2
+     },
+     "category_typos": {
+      "cells": [
+       57,
+       57
+      ],
+      "rows": [
+       51,
+       54
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       17,
+       18
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       78,
+       81
+      ],
+      "rows": [
+       79,
+       84
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       26,
+       26
+      ],
+      "rows": [
+       26,
+       28
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       1,
+       6
+      ]
+     },
+     "dups": {
+      "tp": 14,
+      "fp": 0,
+      "fn": 4,
+      "f1": [
+       28,
+       32
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1014",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "category_typos",
+     "unit_mismatch",
+     "split_merge",
+     "whitespace_encoding",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 8,
+    "checks_failed": [],
+    "ms": 56.9,
+    "prompt_chars": 7286,
+    "score": {
+     "all": {
+      "cells": [
+       985,
+       990
+      ],
+      "rows": [
+       110,
+       126
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       68,
+       68
+      ],
+      "rows": [
+       68,
+       78
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       39,
+       39
+      ],
+      "rows": [
+       39,
+       46
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       325,
+       330
+      ],
+      "rows": [
+       110,
+       126
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       418,
+       423
+      ],
+      "rows": [
+       110,
+       126
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       16
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1015",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "category_typos",
+     "unit_mismatch"
+    ],
+    "plan_errors": [],
+    "ops": 5,
+    "checks_failed": [],
+    "ms": 536.7,
+    "prompt_chars": 7358,
+    "score": {
+     "all": {
+      "cells": [
+       1215,
+       1215
+      ],
+      "rows": [
+       135,
+       136
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       66,
+       66
+      ],
+      "rows": [
+       66,
+       67
+      ]
+     },
+     "currency": {
+      "cells": [
+       80,
+       80
+      ],
+      "rows": [
+       80,
+       81
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       50,
+       50
+      ],
+      "rows": [
+       50,
+       50
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       87,
+       87
+      ],
+      "rows": [
+       87,
+       88
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 1,
+      "fn": 0,
+      "f1": [
+       0,
+       1
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1016",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "unit_mismatch",
+     "split_merge",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 6,
+    "checks_failed": [
+     "row_count"
+    ],
+    "ms": 32.9,
+    "prompt_chars": 6726,
+    "score": {
+     "all": {
+      "cells": [
+       899,
+       904
+      ],
+      "rows": [
+       113,
+       128
+      ],
+      "extra_rows": 3
+     },
+     "mixed_dates": {
+      "cells": [
+       58,
+       58
+      ],
+      "rows": [
+       63,
+       67
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       22,
+       22
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       68,
+       68
+      ],
+      "rows": [
+       70,
+       74
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       110,
+       116
+      ],
+      "rows": [
+       113,
+       128
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       38,
+       38
+      ],
+      "rows": [
+       39,
+       44
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       4,
+       18
+      ]
+     },
+     "dups": {
+      "tp": 15,
+      "fp": 1,
+      "fn": 7,
+      "f1": [
+       30,
+       38
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1017",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "currency",
+     "category_typos",
+     "near_duplicates",
+     "unit_mismatch",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 4,
+    "checks_failed": [
+     "row_count"
+    ],
+    "ms": 46.4,
+    "prompt_chars": 8098,
+    "score": {
+     "all": {
+      "cells": [
+       1150,
+       1152
+      ],
+      "rows": [
+       128,
+       146
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       77,
+       77
+      ],
+      "rows": [
+       80,
+       91
+      ]
+     },
+     "category_typos": {
+      "cells": [
+       46,
+       46
+      ],
+      "rows": [
+       48,
+       50
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       17,
+       17
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       4,
+       22
+      ]
+     },
+     "dups": {
+      "tp": 13,
+      "fp": 0,
+      "fn": 4,
+      "f1": [
+       26,
+       30
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1018",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "currency",
+     "near_duplicates",
+     "unit_mismatch",
+     "split_merge",
+     "whitespace_encoding",
+     "missing_values"
+    ],
+    "plan_errors": [],
+    "ops": 8,
+    "checks_failed": [],
+    "ms": 317.0,
+    "prompt_chars": 7536,
+    "score": {
+     "all": {
+      "cells": [
+       945,
+       945
+      ],
+      "rows": [
+       105,
+       105
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       60,
+       60
+      ],
+      "rows": [
+       67,
+       67
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       22,
+       22
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       66,
+       66
+      ],
+      "rows": [
+       72,
+       72
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       210,
+       210
+      ],
+      "rows": [
+       105,
+       105
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       366,
+       366
+      ],
+      "rows": [
+       105,
+       105
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       33,
+       33
+      ],
+      "rows": [
+       33,
+       33
+      ]
+     },
+     "dups": {
+      "tp": 22,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       44,
+       44
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1019",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "near_duplicates",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 5,
+    "checks_failed": [
+     "row_count"
+    ],
+    "ms": 42.3,
+    "prompt_chars": 6310,
+    "score": {
+     "all": {
+      "cells": [
+       956,
+       960
+      ],
+      "rows": [
+       120,
+       131
+      ],
+      "extra_rows": 1
+     },
+     "mixed_dates": {
+      "cells": [
+       61,
+       61
+      ],
+      "rows": [
+       65,
+       71
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       24,
+       24
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       41,
+       41
+      ],
+      "rows": [
+       42,
+       48
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       4,
+       15
+      ]
+     },
+     "dups": {
+      "tp": 19,
+      "fp": 0,
+      "fn": 5,
+      "f1": [
+       38,
+       43
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1020",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "currency",
+     "unit_mismatch",
+     "split_merge",
+     "whitespace_encoding",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 8,
+    "checks_failed": [],
+    "ms": 34.9,
+    "prompt_chars": 6980,
+    "score": {
+     "all": {
+      "cells": [
+       745,
+       747
+      ],
+      "rows": [
+       83,
+       87
+      ],
+      "extra_rows": 0
+     },
+     "currency": {
+      "cells": [
+       41,
+       41
+      ],
+      "rows": [
+       41,
+       45
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       247,
+       249
+      ],
+      "rows": [
+       83,
+       87
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       167,
+       169
+      ],
+      "rows": [
+       76,
+       80
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       27,
+       27
+      ],
+      "rows": [
+       27,
+       28
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       4
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1021",
+    "split": "heldout",
+    "kind": "orders",
+    "messes": [
+     "mixed_dates",
+     "split_merge",
+     "whitespace_encoding",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 7,
+    "checks_failed": [],
+    "ms": 228.0,
+    "prompt_chars": 6824,
+    "score": {
+     "all": {
+      "cells": [
+       828,
+       828
+      ],
+      "rows": [
+       92,
+       99
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       43,
+       43
+      ],
+      "rows": [
+       43,
+       45
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       184,
+       184
+      ],
+      "rows": [
+       92,
+       99
+      ]
+     },
+     "whitespace_encoding": {
+      "cells": [
+       377,
+       377
+      ],
+      "rows": [
+       92,
+       99
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       7
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1022",
+    "split": "heldout",
+    "kind": "inventory",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "unit_mismatch",
+     "split_merge",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 6,
+    "checks_failed": [],
+    "ms": 32.4,
+    "prompt_chars": 6671,
+    "score": {
+     "all": {
+      "cells": [
+       1000,
+       1000
+      ],
+      "rows": [
+       125,
+       140
+      ],
+      "extra_rows": 0
+     },
+     "mixed_dates": {
+      "cells": [
+       66,
+       66
+      ],
+      "rows": [
+       66,
+       77
+      ]
+     },
+     "currency": {
+      "cells": [
+       74,
+       74
+      ],
+      "rows": [
+       74,
+       82
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       67,
+       67
+      ],
+      "rows": [
+       67,
+       76
+      ]
+     },
+     "split_merge": {
+      "cells": [
+       125,
+       125
+      ],
+      "rows": [
+       125,
+       140
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       15
+      ]
+     },
+     "dups": {
+      "tp": 0,
+      "fp": 0,
+      "fn": 0,
+      "f1": [
+       0,
+       0
+      ]
+     }
+    }
+   },
+   {
+    "name": "held1023",
+    "split": "heldout",
+    "kind": "customers",
+    "messes": [
+     "mixed_dates",
+     "currency",
+     "near_duplicates",
+     "unit_mismatch",
+     "missing_values",
+     "shifted_rows"
+    ],
+    "plan_errors": [],
+    "ops": 5,
+    "checks_failed": [
+     "row_count"
+    ],
+    "ms": 48.7,
+    "prompt_chars": 8130,
+    "score": {
+     "all": {
+      "cells": [
+       1206,
+       1215
+      ],
+      "rows": [
+       135,
+       146
+      ],
+      "extra_rows": 1
+     },
+     "mixed_dates": {
+      "cells": [
+       67,
+       67
+      ],
+      "rows": [
+       71,
+       75
+      ]
+     },
+     "currency": {
+      "cells": [
+       76,
+       76
+      ],
+      "rows": [
+       87,
+       94
+      ]
+     },
+     "near_duplicates": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       31,
+       32
+      ]
+     },
+     "unit_mismatch": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       0,
+       0
+      ]
+     },
+     "missing_values": {
+      "cells": [
+       47,
+       47
+      ],
+      "rows": [
+       49,
+       52
+      ]
+     },
+     "shifted_rows": {
+      "cells": [
+       0,
+       0
+      ],
+      "rows": [
+       6,
+       17
+      ]
+     },
+     "dups": {
+      "tp": 24,
+      "fp": 0,
+      "fn": 8,
+      "f1": [
+       48,
+       56
+      ]
+     }
+    }
+   }
+  ]
+ },
+ "meta": {
+  "date": "2026-11-21",
+  "datasets": {
+   "dev": 40,
+   "heldout": 24
+  },
+  "generator_seeds": "dev 0-39, heldout 1000-1023",
+  "bootstrap": {
+   "resamples": 2000,
+   "seed": 0
+  },
+  "cpu": "Intel(R) Xeon(R) Processor @ 2.10GHz, 1 core used",
+  "python": "3.13.18",
+  "model": null
+ }
+}
