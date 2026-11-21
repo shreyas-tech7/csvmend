@@ -47,7 +47,7 @@ def _formats(v):
         if "%" not in f:
             return f"format {f!r} has no % code"
         try:
-            datetime(2024, 1, 2).strftime(f)
+            datetime.strptime(datetime(2024, 1, 2).strftime(f), f)
         except ValueError:
             return f"format {f!r} is not a valid date format"
     return None
@@ -77,6 +77,8 @@ def _rename_map(v):
         return err
     if any(x == "" for x in v.values()) or len(set(v.values())) != len(v):
         return "new names must be non-empty and different"
+    if any(x in v and x != k for k, x in v.items()):
+        return "a new name may not also be renamed in the same step (swap or chain)"
     return None
 
 
@@ -176,7 +178,7 @@ def check_step(step) -> tuple[dict, list[str]]:
     if not isinstance(step, dict):
         return {}, ["step must be an object"]
     op = step.get("op")
-    if op not in OPS:
+    if not isinstance(op, str) or op not in OPS:
         return {}, [f"unknown op {op!r}"]
     spec = OPS[op]
     errors = []
@@ -198,6 +200,8 @@ def check_step(step) -> tuple[dict, list[str]]:
         full[arg] = step[arg]
     if op == "merge_columns" and not errors and step["into"] in step["columns"]:
         errors.append(f"{op}: into must be a new column name")
+    if op == "split_column" and not errors and step["column"] in step["into"]:
+        errors.append(f"{op}: into may not reuse the column being split")
     return full, errors
 
 

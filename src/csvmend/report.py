@@ -75,7 +75,7 @@ def blocks(root: Path) -> dict[str, str]:
     held = res["planners"]["rules"]["heldout"]
     out["results"] = "\n".join(
         [
-            f"Held out sets ({meta['datasets']['heldout']} datasets, generator seeds {meta['generator_seeds'].split('heldout ')[1].replace('-', ' to ')}, new mixes of four to six messes). Run on {meta['date']}. Bootstrap: {meta['bootstrap']['resamples']} resamples over datasets, seed {meta['bootstrap']['seed']}. The rule baseline is deterministic. LLM model: {meta['model'] or 'none recorded (see Limits)'}.",  # fmt: skip
+            f"Held out sets ({meta['datasets']['heldout']} datasets, generator seeds {meta['generator_seeds'].split('heldout ')[1].replace('-', ' to ')}, new mixes of four to six messes). Run on {meta['date']}. Each cell shows the value and its 95% bootstrap interval ({meta['bootstrap']['resamples']} resamples over datasets, seed {meta['bootstrap']['seed']}). The rule baseline is deterministic. LLM model: {meta['model'] or 'none recorded (see Limits)'}.",  # fmt: skip
             "",
             _table(res, "heldout"),
             "",
@@ -89,6 +89,8 @@ def blocks(root: Path) -> dict[str, str]:
             f"\n\nSecond held out run with new seeds ({sec['meta']['generator_seeds'].split('heldout ')[1].replace('-', ' to ')}), because the first looked very good: "  # fmt: skip
             f"cell accuracy {pct(a['cells'])}, row recall {pct(a['rows'])}, duplicate F1 {pct(a['dup_f1'])}."
         )
+    dup_n = held["metrics"]["all"]["dup_f1"]["datasets"]
+    out["results"] += f"\n\nDuplicate F1 in the all cells row counts only the {dup_n} held out datasets that have injected copies or a row the dedupe step dropped by mistake."  # fmt: skip
     out["dev"] = "\n".join(
         [
             f"Development sets ({meta['datasets']['dev']} datasets, seeds 0 to 39, three messes each). The rules were tuned on these, so expect them to look better than the held out sets.",  # fmt: skip

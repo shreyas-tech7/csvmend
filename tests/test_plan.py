@@ -48,6 +48,9 @@ INVALID = [
     ("cast", {"decimals": -1}),
     ("rename", {"mapping": {"a": ""}}),
     ("rename", {"mapping": {"a": "x", "b": "x"}}),
+    ("rename", {"mapping": {"a": "b", "b": "a"}}),
+    ("rename", {"mapping": {"a": "b", "b": "c"}}),
+    ("parse_dates", {"formats": ["%Q"]}),
 ]
 
 
@@ -140,3 +143,16 @@ def test_drop_rows_ragged():
     t = Table(["a", "b"], [{"src": 0, "ragged": True, "v": {"a": "1", "b": ""}}, {"src": 1, "ragged": False, "v": {"a": "2", "b": "3"}}])  # fmt: skip
     execute(t, validate_plan({"steps": [VALID["drop_rows"]]}, t.header)[0])
     assert [r["src"] for r in t.rows] == [1]
+
+
+@pytest.mark.parametrize("op", [["trim"], {}, 3])
+def test_op_that_is_not_a_string_is_a_plan_error(op):
+    _, errors = check_step({"op": op})
+    assert errors
+
+
+def test_split_into_its_own_name_fails():
+    _, errors = check_step(
+        {"op": "split_column", "column": "full", "sep": " ", "into": ["full", "last"]}
+    )
+    assert errors

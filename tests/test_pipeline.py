@@ -171,3 +171,14 @@ def test_bench_counts_an_unreadable_answer_as_a_rejected_plan(tmp_path):
 
     rec = run_one(suite()[0], {"name": "llm", "fn": bad}, tmp_path)
     assert rec["plan_errors"] and rec["ops"] == 0
+
+
+def test_cli_reports_a_bad_plan_without_a_traceback(tmp_path, capsys):
+    from csvmend.cli import main
+
+    src = tmp_path / "in.csv"
+    src.write_text("a\n1\n")
+    plan = tmp_path / "p.json"
+    plan.write_text("{not json")
+    assert main(["run", str(src), "--plan", str(plan), "--out", str(tmp_path / "o")]) == 2
+    assert "error:" in capsys.readouterr().err

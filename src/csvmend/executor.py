@@ -12,6 +12,7 @@ import csv
 import difflib
 import io
 import json
+import math
 import re
 from datetime import datetime
 from pathlib import Path
@@ -80,11 +81,16 @@ def load(path: Path) -> Table:
     text, enc = read_text(path)
     reader = csv.reader(io.StringIO(text, newline=""))
     header = next(reader, [])
+    dups = sorted({c for c in header if header.count(c) > 1})
+    if dups:
+        raise PlanError(f"duplicate column names: {', '.join(dups)}. Rename them in the file first")
     t = Table(list(header), [])
     if enc != "utf-8":
         t._entry("encoding", "", "*", enc, "utf-8")
     n = len(header)
     for i, raw in enumerate(reader):
+        if not raw:  # a blank line is not a row
+            continue
         vals = (raw + [""] * n)[:n]
         t.rows.append(
             {"src": i, "ragged": len(raw) != n, "v": dict(zip(header, vals, strict=True))}
@@ -223,6 +229,8 @@ def op_fuzzy_dedupe(t, s, stats):
     for r in list(t.rows):
         key = _norm(r["v"][block])[:2]
         sig = [_norm(r["v"][c]) for c in cols]
+        if not any(sig):  # nothing to compare, so never a duplicate
+            continue
         match = None
         for k in kept.get(key, []):
             ksig = [_norm(k["v"][c]) for c in cols]
@@ -305,9 +313,14 @@ def op_cast(t, s, stats):
         v = r["v"][s["column"]].strip()
         if not v or s["type"] == "str":
             continue
+        if s["type"] == "int" and re.fullmatch(r"[+-]?\d+", v):
+            stats["changed"] += t.set(r, s["column"], str(int(v)))
+            continue
         try:
             x = float(v)
         except ValueError:
+            x = math.nan
+        if not math.isfinite(x):
             stats["failed"] += 1
             continue
         if s["type"] == "int":
@@ -337,11 +350,11 @@ def execute(t: Table, steps: list[dict]) -> list[dict]:
 def run(input_path: Path, plan: dict, out_dir: Path) -> dict:
     """Run a plan on a copy of input_path. Write clean.csv, plan.json, changes.csv, run.json."""
     input_path, out_dir = Path(input_path).resolve(), Path(out_dir).resolve()
-    out_dir.mkdir(parents=True, exist_ok=True)
     t = load(input_path)
     steps, errors = validate_plan(plan, t.header)
     if errors:
         raise PlanError("; ".join(errors))
+    out_dir.mkdir(parents=True, exist_ok=True)
     outputs = {n: out_dir / n for n in ("clean.csv", "plan.json", "changes.csv", "run.json")}
     if input_path in outputs.values():
         raise PlanError("the output folder would overwrite the input file")

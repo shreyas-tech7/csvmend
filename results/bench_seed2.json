@@ -181,7 +181,7 @@
      }
     },
     "ops_mean": 0.0,
-    "ms_mean": 11.89,
+    "ms_mean": 9.6425,
     "prompt_chars_mean": 6930.8,
     "plans_rejected": 0,
     "verifier_pass": 0
@@ -365,7 +365,7 @@
      }
     },
     "ops_mean": 0.0,
-    "ms_mean": 12.216666666666667,
+    "ms_mean": 12.0375,
     "prompt_chars_mean": 7185.5,
     "plans_rejected": 0,
     "verifier_pass": 0
@@ -552,7 +552,7 @@
      }
     },
     "ops_mean": 4.325,
-    "ms_mean": 93.91499999999999,
+    "ms_mean": 84.0475,
     "prompt_chars_mean": 6930.8,
     "plans_rejected": 0,
     "verifier_pass": 40
@@ -736,7 +736,7 @@
      }
     },
     "ops_mean": 6.666666666666667,
-    "ms_mean": 132.03333333333333,
+    "ms_mean": 122.29166666666667,
     "prompt_chars_mean": 7185.5,
     "plans_rejected": 0,
     "verifier_pass": 22
@@ -761,7 +761,7 @@
      "allowed:segment",
      "type:lifetime_value"
     ],
-    "ms": 16.4,
+    "ms": 8.7,
     "prompt_chars": 7821,
     "score": {
      "all": {
@@ -832,7 +832,7 @@
      "allowed:category",
      "type:unit_price"
     ],
-    "ms": 14.6,
+    "ms": 11.0,
     "prompt_chars": 6767,
     "score": {
      "all": {
@@ -907,7 +907,7 @@
      "type:last_restock",
      "allowed:warehouse"
     ],
-    "ms": 13.6,
+    "ms": 9.7,
     "prompt_chars": 6250,
     "score": {
      "all": {
@@ -978,7 +978,7 @@
      "type:signup_date",
      "allowed:segment"
     ],
-    "ms": 10.0,
+    "ms": 8.9,
     "prompt_chars": 7565,
     "score": {
      "all": {
@@ -1050,7 +1050,7 @@
      "type:unit_price",
      "type:weight_kg"
     ],
-    "ms": 9.8,
+    "ms": 8.9,
     "prompt_chars": 7097,
     "score": {
      "all": {
@@ -1121,7 +1121,7 @@
      "type:last_restock",
      "allowed:warehouse"
     ],
-    "ms": 12.5,
+    "ms": 9.3,
     "prompt_chars": 6216,
     "score": {
      "all": {
@@ -1192,7 +1192,7 @@
      "allowed:segment",
      "type:lifetime_value"
     ],
-    "ms": 11.1,
+    "ms": 9.4,
     "prompt_chars": 7458,
     "score": {
      "all": {
@@ -1264,7 +1264,7 @@
      "type:weight_kg",
      "range:weight_kg"
     ],
-    "ms": 10.0,
+    "ms": 9.2,
     "prompt_chars": 6694,
     "score": {
      "all": {
@@ -1336,7 +1336,7 @@
      "type:last_restock",
      "allowed:warehouse"
     ],
-    "ms": 10.5,
+    "ms": 9.2,
     "prompt_chars": 6599,
     "score": {
      "all": {
@@ -1407,7 +1407,7 @@
      "allowed:segment",
      "type:lifetime_value"
     ],
-    "ms": 9.4,
+    "ms": 8.1,
     "prompt_chars": 7571,
     "score": {
      "all": {
@@ -1477,7 +1477,7 @@
      "columns",
      "allowed:category"
     ],
-    "ms": 12.2,
+    "ms": 8.9,
     "prompt_chars": 6990,
     "score": {
      "all": {
@@ -1551,7 +1551,7 @@
      "type:last_restock",
      "allowed:warehouse"
     ],
-    "ms": 8.5,
+    "ms": 7.4,
     "prompt_chars": 6857,
     "score": {
      "all": {
@@ -1623,7 +1623,7 @@
      "allowed:segment",
      "type:lifetime_value"
     ],
-    "ms": 8.7,
+    "ms": 7.8,
     "prompt_chars": 6771,
     "score": {
      "all": {
@@ -1697,7 +1697,7 @@
      "type:weight_kg",
      "range:weight_kg"
     ],
-    "ms": 12.5,
+    "ms": 11.7,
     "prompt_chars": 6781,
     "score": {
      "all": {
@@ -1768,7 +1768,7 @@
      "type:weight_kg",
      "allowed:warehouse"
     ],
-    "ms": 8.5,
+    "ms": 7.6,
     "prompt_chars": 6860,
     "score": {
      "all": {
@@ -1838,7 +1838,7 @@
      "allowed:segment",
      "type:lifetime_value"
     ],
-    "ms": 16.1,
+    "ms": 14.7,
     "prompt_chars": 8286,
     "score": {
      "all": {
@@ -1911,7 +1911,7 @@
      "type:weight_kg",
      "range:weight_kg"
     ],
-    "ms": 12.8,
+    "ms": 10.2,
     "prompt_chars": 6899,
     "score": {
      "all": {
@@ -1981,7 +1981,7 @@
      "type:weight_kg",
      "type:last_restock"
     ],
-    "ms": 15.8,
+    "ms": 8.0,
     "prompt_chars": 6222,
     "score": {
      "all": {
@@ -2053,7 +2053,7 @@
      "allowed:segment",
      "type:lifetime_value"
     ],
-    "ms": 15.3,
+    "ms": 7.9,
     "prompt_chars": 7391,
     "score": {
      "all": {
@@ -2124,7 +2124,7 @@
      "allowed:category",
      "type:unit_price"
     ],
-    "ms": 15.5,
+    "ms": 8.1,
     "prompt_chars": 6573,
     "score": {
      "all": {
@@ -2194,7 +2194,7 @@
      "columns",
      "allowed:category"
     ],
-    "ms": 21.2,
+    "ms": 11.1,
     "prompt_chars": 6249,
     "score": {
      "all": {
@@ -2264,7 +2264,7 @@
      "columns",
      "allowed:segment"
     ],
-    "ms": 22.8,
+    "ms": 12.3,
     "prompt_chars": 7711,
     "score": {
      "all": {
@@ -2338,7 +2338,7 @@
      "type:unit_price",
      "type:weight_kg"
     ],
-    "ms": 22.4,
+    "ms": 12.2,
     "prompt_chars": 6619,
     "score": {
      "all": {
@@ -2411,7 +2411,7 @@
      "type:weight_kg",
      "allowed:warehouse"
     ],
-    "ms": 18.2,
+    "ms": 11.3,
     "prompt_chars": 6271,
     "score": {
      "all": {
@@ -2483,7 +2483,7 @@
      "allowed:segment",
      "type:lifetime_value"
     ],
-    "ms": 9.8,
+    "ms": 8.4,
     "prompt_chars": 6834,
     "score": {
      "all": {
@@ -2556,7 +2556,7 @@
      "type:unit_price",
      "type:weight_kg"
     ],
-    "ms": 12.4,
+    "ms": 10.6,
     "prompt_chars": 7881,
     "score": {
      "all": {
@@ -2628,7 +2628,7 @@
      "type:weight_kg",
      "type:last_restock"
     ],
-    "ms": 8.1,
+    "ms": 7.4,
     "prompt_chars": 6526,
     "score": {
      "all": {
@@ -2700,7 +2700,7 @@
      "allowed:segment",
      "type:lifetime_value"
     ],
-    "ms": 9.6,
+    "ms": 9.2,
     "prompt_chars": 6766,
     "score": {
      "all": {
@@ -2774,7 +2774,7 @@
      "type:weight_kg",
      "range:weight_kg"
     ],
-    "ms": 8.4,
+    "ms": 7.8,
     "prompt_chars": 6188,
     "score": {
      "all": {
@@ -2849,7 +2849,7 @@
      "type:last_restock",
      "allowed:warehouse"
     ],
-    "ms": 7.6,
+    "ms": 9.6,
     "prompt_chars": 6746,
     "score": {
      "all": {
@@ -2920,7 +2920,7 @@
      "allowed:segment",
      "type:lifetime_value"
     ],
-    "ms": 8.7,
+    "ms": 8.1,
     "prompt_chars": 7638,
     "score": {
      "all": {
@@ -2992,7 +2992,7 @@
      "type:unit_price",
      "type:weight_kg"
     ],
-    "ms": 7.9,
+    "ms": 7.5,
     "prompt_chars": 6929,
     "score": {
      "all": {
@@ -3136,7 +3136,7 @@
      "allowed:segment",
      "type:lifetime_value"
     ],
-    "ms": 8.6,
+    "ms": 8.0,
     "prompt_chars": 7630,
     "score": {
      "all": {
@@ -3209,7 +3209,7 @@
      "type:quantity",
      "range:weight_kg"
     ],
-    "ms": 8.5,
+    "ms": 10.2,
     "prompt_chars": 6410,
     "score": {
      "all": {
@@ -3284,7 +3284,7 @@
      "type:last_restock",
      "allowed:warehouse"
     ],
-    "ms": 10.8,
+    "ms": 10.4,
     "prompt_chars": 6582,
     "score": {
      "all": {
@@ -3355,7 +3355,7 @@
      "allowed:segment",
      "type:lifetime_value"
     ],
-    "ms": 10.8,
+    "ms": 9.8,
     "prompt_chars": 7717,
     "score": {
      "all": {
@@ -3429,7 +3429,7 @@
      "type:unit_price",
      "type:weight_kg"
     ],
-    "ms": 9.9,
+    "ms": 10.0,
     "prompt_chars": 6379,
     "score": {
      "all": {
@@ -3502,7 +3502,7 @@
      "type:weight_kg",
      "range:weight_kg"
     ],
-    "ms": 10.5,
+    "ms": 16.6,
     "prompt_chars": 6265,
     "score": {
      "all": {
@@ -3572,7 +3572,7 @@
      "columns",
      "type:lifetime_value"
     ],
-    "ms": 8.7,
+    "ms": 13.6,
     "prompt_chars": 7650,
     "score": {
      "all": {
@@ -3646,7 +3646,7 @@
      "type:last_restock",
      "allowed:warehouse"
     ],
-    "ms": 13.7,
+    "ms": 18.1,
     "prompt_chars": 6681,
     "score": {
      "all": {
@@ -3845,7 +3845,7 @@
      "allowed:category",
      "type:unit_price"
     ],
-    "ms": 12.6,
+    "ms": 11.5,
     "prompt_chars": 7215,
     "score": {
      "all": {
@@ -3952,7 +3952,7 @@
      "type:last_restock",
      "allowed:warehouse"
     ],
-    "ms": 10.3,
+    "ms": 9.3,
     "prompt_chars": 7335,
     "score": {
      "all": {
@@ -4046,7 +4046,7 @@
      "allowed:segment",
      "type:lifetime_value"
     ],
-    "ms": 13.4,
+    "ms": 12.3,
     "prompt_chars": 7267,
     "score": {
      "all": {
@@ -4140,7 +4140,7 @@
      "allowed:category",
      "type:weight_kg"
     ],
-    "ms": 9.9,
+    "ms": 9.0,
     "prompt_chars": 8012,
     "score": {
      "all": {
@@ -4236,7 +4236,7 @@
      "type:last_restock",
      "allowed:warehouse"
     ],
-    "ms": 12.7,
+    "ms": 12.6,
     "prompt_chars": 7832,
     "score": {
      "all": {
@@ -4339,7 +4339,7 @@
      "type:signup_date",
      "type:lifetime_value"
     ],
-    "ms": 10.5,
+    "ms": 9.6,
     "prompt_chars": 6925,
     "score": {
      "all": {
@@ -4434,7 +4434,7 @@
      "type:unit_price",
      "type:weight_kg"
     ],
-    "ms": 12.2,
+    "ms": 11.6,
     "prompt_chars": 7566,
     "score": {
      "all": {
@@ -4527,7 +4527,7 @@
      "type:last_restock",
      "allowed:warehouse"
     ],
-    "ms": 8.9,
+    "ms": 7.8,
     "prompt_chars": 6686,
     "score": {
      "all": {
@@ -4610,7 +4610,7 @@
      "allowed:segment",
      "type:lifetime_value"
     ],
-    "ms": 12.1,
+    "ms": 11.9,
     "prompt_chars": 6792,
     "score": {
      "all": {
@@ -4697,7 +4697,7 @@
      "type:weight_kg",
      "range:weight_kg"
     ],
-    "ms": 9.5,
+    "ms": 8.6,
     "prompt_chars": 6479,
     "score": {
      "all": {
@@ -4793,7 +4793,7 @@
      "range:weight_kg",
      "allowed:warehouse"
     ],
-    "ms": 9.8,
+    "ms": 8.7,
     "prompt_chars": 6477,
     "score": {
      "all": {
@@ -4897,7 +4897,7 @@
      "allowed:segment",
      "type:lifetime_value"
     ],
-    "ms": 14.8,
+    "ms": 15.2,
     "prompt_chars": 7134,
     "score": {
      "all": {
@@ -4994,7 +4994,7 @@
      "type:weight_kg",
      "range:weight_kg"
     ],
-    "ms": 12.0,
+    "ms": 13.0,
     "prompt_chars": 6784,
     "score": {
      "all": {
@@ -5087,7 +5087,7 @@
      "type:last_restock",
      "allowed:warehouse"
     ],
-    "ms": 14.1,
+    "ms": 13.9,
     "prompt_chars": 6481,
     "score": {
      "all": {
@@ -5179,7 +5179,7 @@
      "type:signup_date",
      "type:lifetime_value"
     ],
-    "ms": 13.4,
+    "ms": 13.7,
     "prompt_chars": 7951,
     "score": {
      "all": {
@@ -5266,7 +5266,7 @@
      "type:weight_kg",
      "range:weight_kg"
     ],
-    "ms": 12.6,
+    "ms": 15.9,
     "prompt_chars": 6464,
     "score": {
      "all": {
@@ -5364,7 +5364,7 @@
      "type:last_restock",
      "allowed:warehouse"
     ],
-    "ms": 12.9,
+    "ms": 12.1,
     "prompt_chars": 7544,
     "score": {
      "all": {
@@ -5466,7 +5466,7 @@
      "columns",
      "type:signup_date"
     ],
-    "ms": 17.1,
+    "ms": 16.6,
     "prompt_chars": 7488,
     "score": {
      "all": {
@@ -5563,7 +5563,7 @@
      "type:unit_price",
      "type:weight_kg"
     ],
-    "ms": 10.3,
+    "ms": 9.4,
     "prompt_chars": 7959,
     "score": {
      "all": {
@@ -5671,7 +5671,7 @@
      "type:last_restock",
      "allowed:warehouse"
     ],
-    "ms": 10.0,
+    "ms": 9.4,
     "prompt_chars": 6657,
     "score": {
      "all": {
@@ -5764,7 +5764,7 @@
      "type:signup_date",
      "type:lifetime_value"
     ],
-    "ms": 13.9,
+    "ms": 13.2,
     "prompt_chars": 6917,
     "score": {
      "all": {
@@ -5856,7 +5856,7 @@
      "columns",
      "type:weight_kg"
     ],
-    "ms": 11.8,
+    "ms": 10.8,
     "prompt_chars": 7436,
     "score": {
      "all": {
@@ -5945,7 +5945,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 18.9,
+    "ms": 17.4,
     "prompt_chars": 7821,
     "score": {
      "all": {
@@ -6012,7 +6012,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 311.9,
+    "ms": 295.2,
     "prompt_chars": 6767,
     "score": {
      "all": {
@@ -6079,7 +6079,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 20.3,
+    "ms": 19.0,
     "prompt_chars": 6250,
     "score": {
      "all": {
@@ -6146,7 +6146,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 19.0,
+    "ms": 18.2,
     "prompt_chars": 7565,
     "score": {
      "all": {
@@ -6213,7 +6213,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 209.3,
+    "ms": 167.8,
     "prompt_chars": 7097,
     "score": {
      "all": {
@@ -6280,7 +6280,7 @@
     "plan_errors": [],
     "ops": 5,
     "checks_failed": [],
-    "ms": 24.7,
+    "ms": 22.9,
     "prompt_chars": 6216,
     "score": {
      "all": {
@@ -6347,7 +6347,7 @@
     "plan_errors": [],
     "ops": 3,
     "checks_failed": [],
-    "ms": 19.5,
+    "ms": 18.4,
     "prompt_chars": 7458,
     "score": {
      "all": {
@@ -6414,7 +6414,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 185.7,
+    "ms": 178.3,
     "prompt_chars": 6694,
     "score": {
      "all": {
@@ -6481,7 +6481,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 22.6,
+    "ms": 22.0,
     "prompt_chars": 6599,
     "score": {
      "all": {
@@ -6548,7 +6548,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 18.6,
+    "ms": 17.4,
     "prompt_chars": 7571,
     "score": {
      "all": {
@@ -6615,7 +6615,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 194.2,
+    "ms": 190.2,
     "prompt_chars": 6990,
     "score": {
      "all": {
@@ -6682,7 +6682,7 @@
     "plan_errors": [],
     "ops": 5,
     "checks_failed": [],
-    "ms": 16.0,
+    "ms": 15.1,
     "prompt_chars": 6857,
     "score": {
      "all": {
@@ -6749,7 +6749,7 @@
     "plan_errors": [],
     "ops": 5,
     "checks_failed": [],
-    "ms": 20.2,
+    "ms": 18.8,
     "prompt_chars": 6771,
     "score": {
      "all": {
@@ -6816,7 +6816,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 293.2,
+    "ms": 298.8,
     "prompt_chars": 6781,
     "score": {
      "all": {
@@ -6883,7 +6883,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 24.1,
+    "ms": 14.3,
     "prompt_chars": 6860,
     "score": {
      "all": {
@@ -6950,7 +6950,7 @@
     "plan_errors": [],
     "ops": 3,
     "checks_failed": [],
-    "ms": 51.5,
+    "ms": 36.1,
     "prompt_chars": 8286,
     "score": {
      "all": {
@@ -7017,7 +7017,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 274.6,
+    "ms": 274.8,
     "prompt_chars": 6899,
     "score": {
      "all": {
@@ -7084,7 +7084,7 @@
     "plan_errors": [],
     "ops": 3,
     "checks_failed": [],
-    "ms": 17.9,
+    "ms": 16.3,
     "prompt_chars": 6222,
     "score": {
      "all": {
@@ -7151,7 +7151,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 18.5,
+    "ms": 14.6,
     "prompt_chars": 7391,
     "score": {
      "all": {
@@ -7218,7 +7218,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 210.6,
+    "ms": 187.3,
     "prompt_chars": 6573,
     "score": {
      "all": {
@@ -7285,7 +7285,7 @@
     "plan_errors": [],
     "ops": 5,
     "checks_failed": [],
-    "ms": 46.3,
+    "ms": 27.0,
     "prompt_chars": 6249,
     "score": {
      "all": {
@@ -7352,7 +7352,7 @@
     "plan_errors": [],
     "ops": 3,
     "checks_failed": [],
-    "ms": 55.9,
+    "ms": 32.8,
     "prompt_chars": 7711,
     "score": {
      "all": {
@@ -7419,7 +7419,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 392.4,
+    "ms": 343.7,
     "prompt_chars": 6619,
     "score": {
      "all": {
@@ -7486,7 +7486,7 @@
     "plan_errors": [],
     "ops": 5,
     "checks_failed": [],
-    "ms": 28.3,
+    "ms": 26.0,
     "prompt_chars": 6271,
     "score": {
      "all": {
@@ -7553,7 +7553,7 @@
     "plan_errors": [],
     "ops": 5,
     "checks_failed": [],
-    "ms": 21.6,
+    "ms": 18.9,
     "prompt_chars": 6834,
     "score": {
      "all": {
@@ -7620,7 +7620,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 210.0,
+    "ms": 213.3,
     "prompt_chars": 7881,
     "score": {
      "all": {
@@ -7687,7 +7687,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 17.3,
+    "ms": 14.0,
     "prompt_chars": 6526,
     "score": {
      "all": {
@@ -7754,7 +7754,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 21.4,
+    "ms": 19.8,
     "prompt_chars": 6766,
     "score": {
      "all": {
@@ -7821,7 +7821,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 163.8,
+    "ms": 154.3,
     "prompt_chars": 6188,
     "score": {
      "all": {
@@ -7888,7 +7888,7 @@
     "plan_errors": [],
     "ops": 5,
     "checks_failed": [],
-    "ms": 15.8,
+    "ms": 14.8,
     "prompt_chars": 6746,
     "score": {
      "all": {
@@ -7955,7 +7955,7 @@
     "plan_errors": [],
     "ops": 3,
     "checks_failed": [],
-    "ms": 17.9,
+    "ms": 16.0,
     "prompt_chars": 7638,
     "score": {
      "all": {
@@ -8022,7 +8022,7 @@
     "plan_errors": [],
     "ops": 5,
     "checks_failed": [],
-    "ms": 139.1,
+    "ms": 134.2,
     "prompt_chars": 6929,
     "score": {
      "all": {
@@ -8089,7 +8089,7 @@
     "plan_errors": [],
     "ops": 5,
     "checks_failed": [],
-    "ms": 12.7,
+    "ms": 12.0,
     "prompt_chars": 6573,
     "score": {
      "all": {
@@ -8156,7 +8156,7 @@
     "plan_errors": [],
     "ops": 5,
     "checks_failed": [],
-    "ms": 15.9,
+    "ms": 14.7,
     "prompt_chars": 7630,
     "score": {
      "all": {
@@ -8223,7 +8223,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 221.9,
+    "ms": 175.4,
     "prompt_chars": 6410,
     "score": {
      "all": {
@@ -8290,7 +8290,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 45.5,
+    "ms": 28.2,
     "prompt_chars": 6582,
     "score": {
      "all": {
@@ -8357,7 +8357,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 38.5,
+    "ms": 30.0,
     "prompt_chars": 7717,
     "score": {
      "all": {
@@ -8424,7 +8424,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 275.0,
+    "ms": 206.7,
     "prompt_chars": 6379,
     "score": {
      "all": {
@@ -8491,7 +8491,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 25.5,
+    "ms": 20.7,
     "prompt_chars": 6265,
     "score": {
      "all": {
@@ -8558,7 +8558,7 @@
     "plan_errors": [],
     "ops": 4,
     "checks_failed": [],
-    "ms": 20.5,
+    "ms": 16.5,
     "prompt_chars": 7650,
     "score": {
      "all": {
@@ -8627,7 +8627,7 @@
     "plan_errors": [],
     "ops": 8,
     "checks_failed": [],
-    "ms": 45.2,
+    "ms": 25.1,
     "prompt_chars": 6681,
     "score": {
      "all": {
@@ -8717,7 +8717,7 @@
     "plan_errors": [],
     "ops": 7,
     "checks_failed": [],
-    "ms": 66.6,
+    "ms": 40.5,
     "prompt_chars": 8370,
     "score": {
      "all": {
@@ -8817,7 +8817,7 @@
     "plan_errors": [],
     "ops": 8,
     "checks_failed": [],
-    "ms": 307.8,
+    "ms": 288.7,
     "prompt_chars": 7215,
     "score": {
      "all": {
@@ -8916,7 +8916,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 22.2,
+    "ms": 21.6,
     "prompt_chars": 7335,
     "score": {
      "all": {
@@ -9005,7 +9005,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 34.2,
+    "ms": 34.8,
     "prompt_chars": 7267,
     "score": {
      "all": {
@@ -9094,7 +9094,7 @@
     "plan_errors": [],
     "ops": 7,
     "checks_failed": [],
-    "ms": 192.6,
+    "ms": 186.9,
     "prompt_chars": 8012,
     "score": {
      "all": {
@@ -9184,7 +9184,7 @@
     "plan_errors": [],
     "ops": 9,
     "checks_failed": [],
-    "ms": 40.8,
+    "ms": 33.6,
     "prompt_chars": 7832,
     "score": {
      "all": {
@@ -9283,7 +9283,7 @@
     "plan_errors": [],
     "ops": 7,
     "checks_failed": [],
-    "ms": 24.3,
+    "ms": 22.1,
     "prompt_chars": 6925,
     "score": {
      "all": {
@@ -9374,7 +9374,7 @@
     "checks_failed": [
      "allowed:category"
     ],
-    "ms": 320.9,
+    "ms": 410.0,
     "prompt_chars": 7566,
     "score": {
      "all": {
@@ -9462,7 +9462,7 @@
     "plan_errors": [],
     "ops": 7,
     "checks_failed": [],
-    "ms": 18.8,
+    "ms": 16.9,
     "prompt_chars": 6686,
     "score": {
      "all": {
@@ -9542,7 +9542,7 @@
     "checks_failed": [
      "row_count"
     ],
-    "ms": 27.5,
+    "ms": 26.6,
     "prompt_chars": 6792,
     "score": {
      "all": {
@@ -9621,7 +9621,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 184.3,
+    "ms": 186.5,
     "prompt_chars": 6479,
     "score": {
      "all": {
@@ -9711,7 +9711,7 @@
     "plan_errors": [],
     "ops": 8,
     "checks_failed": [],
-    "ms": 20.0,
+    "ms": 19.2,
     "prompt_chars": 6477,
     "score": {
      "all": {
@@ -9810,7 +9810,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 42.4,
+    "ms": 43.6,
     "prompt_chars": 7134,
     "score": {
      "all": {
@@ -9899,7 +9899,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 377.1,
+    "ms": 350.9,
     "prompt_chars": 6784,
     "score": {
      "all": {
@@ -9988,7 +9988,7 @@
     "plan_errors": [],
     "ops": 7,
     "checks_failed": [],
-    "ms": 56.3,
+    "ms": 35.8,
     "prompt_chars": 6481,
     "score": {
      "all": {
@@ -10076,7 +10076,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 47.6,
+    "ms": 42.3,
     "prompt_chars": 7951,
     "score": {
      "all": {
@@ -10155,7 +10155,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 480.0,
+    "ms": 418.6,
     "prompt_chars": 6464,
     "score": {
      "all": {
@@ -10245,7 +10245,7 @@
     "plan_errors": [],
     "ops": 8,
     "checks_failed": [],
-    "ms": 38.2,
+    "ms": 32.0,
     "prompt_chars": 7544,
     "score": {
      "all": {
@@ -10344,7 +10344,7 @@
     "plan_errors": [],
     "ops": 7,
     "checks_failed": [],
-    "ms": 88.5,
+    "ms": 57.5,
     "prompt_chars": 7488,
     "score": {
      "all": {
@@ -10434,7 +10434,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 281.5,
+    "ms": 249.1,
     "prompt_chars": 7959,
     "score": {
      "all": {
@@ -10533,7 +10533,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 30.0,
+    "ms": 27.9,
     "prompt_chars": 6657,
     "score": {
      "all": {
@@ -10622,7 +10622,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 53.0,
+    "ms": 40.6,
     "prompt_chars": 6917,
     "score": {
      "all": {
@@ -10711,7 +10711,7 @@
     "plan_errors": [],
     "ops": 6,
     "checks_failed": [],
-    "ms": 369.0,
+    "ms": 324.2,
     "prompt_chars": 7436,
     "score": {
      "all": {

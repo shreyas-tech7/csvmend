@@ -105,3 +105,50 @@ def test_outputs_are_written(tmp_path):
     src, result, out = _rule_run(tmp_path, "inventory", 7)
     assert {p.name for p in out.iterdir()} == {"clean.csv", "plan.json", "changes.csv", "run.json"}
     assert json.loads((out / "run.json").read_text())["rows_out"] == result["rows_out"]
+
+
+def test_duplicate_column_names_are_refused(tmp_path):
+    """Broken case: csv.DictReader style loading would keep only the last of two columns."""
+    src = tmp_path / "dup.csv"
+    src.write_text("a,a\n1,2\n")
+    with pytest.raises(ValueError, match="duplicate column"):
+        run(src, {"version": 1, "steps": []}, tmp_path / "out")
+
+
+def test_rejected_plan_makes_no_output_folder(tmp_path):
+    src = tmp_path / "in.csv"
+    src.write_text("a\n1\n")
+    with pytest.raises(PlanError):
+        run(src, {"version": 1, "steps": [{"op": "trim", "columns": ["b"]}]}, tmp_path / "out")
+    assert not (tmp_path / "out").exists()
+
+
+def test_blank_lines_are_not_rows(tmp_path):
+    src = tmp_path / "in.csv"
+    src.write_text("a,b\n1,2\n\n3,4\n")
+    t = load(src)
+    assert [r["v"]["a"] for r in t.rows] == ["1", "3"] and not any(r["ragged"] for r in t.rows)
+
+
+def test_cast_keeps_big_integers_exact_and_refuses_inf(tmp_path):
+    src = tmp_path / "in.csv"
+    src.write_text("n,x\n12345678901234567890,inf\n")
+    plan = {
+        "version": 1,
+        "steps": [
+            {"op": "cast", "column": "n", "type": "int"},
+            {"op": "cast", "column": "x", "type": "float"},
+        ],
+    }
+    r = run(src, plan, tmp_path / "out")
+    assert (tmp_path / "out" / "clean.csv").read_text().splitlines()[
+        1
+    ] == "12345678901234567890,inf"
+    assert r["steps"][1]["failed"] == 1
+
+
+def test_fuzzy_dedupe_never_merges_blank_values(tmp_path):
+    src = tmp_path / "in.csv"
+    src.write_text("name,email\n,a@x.test\n,b@x.test\n,c@x.test\n")
+    plan = {"version": 1, "steps": [{"op": "fuzzy_dedupe", "columns": ["name"]}]}
+    assert run(src, plan, tmp_path / "out")["rows_out"] == 3

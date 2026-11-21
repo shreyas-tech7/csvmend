@@ -38,7 +38,7 @@ flowchart LR
 ## Results
 
 <!-- gen:results -->
-Held out sets (24 datasets, generator seeds 1000 to 1023, new mixes of four to six messes). Run on 2026-11-21. Bootstrap: 2000 resamples over datasets, seed 0. The rule baseline is deterministic. LLM model: none recorded (see Limits).
+Held out sets (24 datasets, generator seeds 1000 to 1023, new mixes of four to six messes). Run on 2026-11-21. Each cell shows the value and its 95% bootstrap interval (2000 resamples over datasets, seed 0). The rule baseline is deterministic. LLM model: none recorded (see Limits).
 
 | Mess type | Datasets | Cell accuracy, rules | Row recall, rules | Duplicate F1, rules | Cell accuracy, no plan |
 | --- | --- | --- | --- | --- | --- |
@@ -56,6 +56,8 @@ Held out sets (24 datasets, generator seeds 1000 to 1023, new mixes of four to s
 The verifier passed every check on 16 of 24 held out outputs. Failed checks by name: row_count 8. The row_count check flags outputs that lost more than a fifth of their rows.
 
 Second held out run with new seeds (2000 to 2023), because the first looked very good: cell accuracy 99.9% (99.8 to 100.0), row recall 94.2% (91.8 to 96.6), duplicate F1 91.3% (85.4 to 95.8).
+
+Duplicate F1 in the all cells row counts only the 16 held out datasets that have injected copies or a row the dedupe step dropped by mistake.
 <!-- /gen:results -->
 
 Cell accuracy counts cells in rows that reached the output. Row recall counts clean rows that reached the output. The near duplicates row has no cell accuracy, because that mess adds rows instead of changing cells. Shifted rows have no cell accuracy either, because the plan drops them.
@@ -87,7 +89,7 @@ Development sets (40 datasets, seeds 0 to 39, three messes each). The rules were
 <!-- gen:cost -->
 | Planner | Money | Time per dataset | Operations per plan | Model calls |
 | --- | --- | --- | --- | --- |
-| rule baseline | 0 dollars | 156 ms (profile, plan, run, verify) | 6.5 | 0 |
+| rule baseline | 0 dollars | 154 ms (profile, plan, run, verify) | 6.5 | 0 |
 | LLM planner | 0 dollars on a free tier | not measured | not measured | 1 per dataset, about 1830 prompt tokens |
 
 Times come from Intel(R) Xeon(R) Processor @ 2.10GHz, 1 core used, Python 3.13.18, 2026-11-21. Token counts are characters divided by four, an estimate.
@@ -126,6 +128,9 @@ To clean your own file, write a schema JSON like `data/orders.schema.json` and p
 - fuzzy_dedupe compares rows inside a block keyed on the first two letters of one column. A typo there hides the pair. It also merges a few distinct rows that look alike.
 - The verifier cannot tell a wrong value of the right type from a right one. A date parsed as March 4 instead of April 3 passes every check.
 - Lost values stay empty. csvmend never guesses a value.
+- A comma inside a weight always reads as a decimal mark, so `1,500 g` becomes 1.5 grams. A money value with one dot and three digits after it, such as `€1.234`, reads as 1.23. Real files that mix both conventions need a person to check.
+- `map_values` with `case_insensitive` keeps the last of two keys that differ only in case, and does not warn.
+- Files with two columns of the same name are refused. Rename one first.
 - The CSV must fit in memory. No databases, Excel formulas, user interface or joins.
 
 ## Glossary

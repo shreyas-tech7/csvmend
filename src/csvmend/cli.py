@@ -151,7 +151,11 @@ def main(argv=None) -> int:
     d = sub.add_parser("demo", help="clean one small dataset and show before and after")
     d.add_argument("--work", default=".cache/demo")
     a = ap.parse_args(argv)
-    return globals()[f"cmd_{a.cmd}"](a) or 0
+    try:
+        return globals()[f"cmd_{a.cmd}"](a) or 0
+    except (ValueError, OSError, KeyError) as e:  # bad plan, bad JSON, missing file, bad log
+        print(f"csvmend {a.cmd}: error: {e}", file=sys.stderr)
+        return 2
 
 
 if __name__ == "__main__":

@@ -13,6 +13,13 @@ def test_guard_blocks_remote_hosts():
     s.close()
 
 
+def test_guard_blocks_connect_ex_too():
+    s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+    with pytest.raises(NetworkBlocked):
+        s.connect_ex(("93.184.216.34", 80))
+    s.close()
+
+
 def test_guard_allows_localhost():
     srv = socket.socket()
     srv.bind(("127.0.0.1", 0))
