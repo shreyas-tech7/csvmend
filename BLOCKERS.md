@@ -7,7 +7,6 @@
 | 2026-11-21 | api.osv.dev, semgrep.dev | curl answered `000` | pip-audit and `ruff check --select S` instead |
 | 2026-11-21 | `gh`, PR creation, tag push, repo settings | not available from this machine (brief) | The coordinator opens the PR, merges, tags and sets About and topics. Values are in docs/GITHUB_ABOUT.md and docs/topics.txt |
 
-| 2026-11-21 | F17 open until the release SHA is written | not an error | Set to true in the commit that writes the release SHA into CHANGELOG.md and docs/HUMAN_STEPS.md |
 
 ## Bugs found and scored (frequency x severity)
 

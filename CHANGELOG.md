@@ -2,7 +2,7 @@
 
 ## v0.1.0-rc1 (2026-11-21)
 
-Release commit: RELEASE_SHA on branch `claude/project-thread-32rdr4`. The tag waits for Shreyas, see [docs/HUMAN_STEPS.md](docs/HUMAN_STEPS.md).
+Release commit: 030c0fd51676993f645a673fa4ff6ad80c5ec041 on branch `claude/project-thread-32rdr4`. The tag waits for Shreyas, see [docs/HUMAN_STEPS.md](docs/HUMAN_STEPS.md).
 
 - Seeded generator for three table kinds with nine named messes and ground truth.
 - Plan language with 12 operations. Each one checks its own arguments, and the validator follows the header through the plan.

@@ -152,7 +152,7 @@
   "steps": [
    "grep -E '[0-9a-f]{40}' CHANGELOG.md docs/HUMAN_STEPS.md"
   ],
-  "passes": false
+  "passes": true
  },
  {
   "id": "F18",
