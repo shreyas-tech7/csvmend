@@ -4,7 +4,7 @@ One line per choice: what I picked, what else I weighed, and why.
 
 - 2026-11-21 Name: `csvmend`. PyPI and npm both answered 404 and a web search showed no well known GitHub project with that name. The backup `tidyplan` was not needed. Repo name matches.
 - 2026-11-21 Branch: `claude/project-thread-32rdr4`, not `claude/build-csvmend`. The session's git rules allow only that branch, and the brief's rule 11 says to use the allowed branch.
-- 2026-11-21 Clone location: `/home/user/csvmend`, the clone the session already had, not `~/work/csvmend`. Same origin, so nothing changes for the coordinator.
+- 2026-11-21 Clone location: the clone the build session already had, not a fresh one. Same origin, so nothing changes for the coordinator.
 - 2026-11-21 Planners get the user's target schema (column names, types, ranges, allowed values, units, key, dedupe columns) next to the profile. Weighed: profile only. Picked schema because a cleaner needs a target, the schema holds no rows from the file, and the verifier needs the same spec. The 20 row limit still holds.
 - 2026-11-21 Ground truth for a blanked cell is an empty cell, not the old value. No cleaner can know a value that the file lost. Guessing would only add noise to the score.
 - 2026-11-21 Currency mess keeps one currency (USD) and changes only symbols and locale formats ($1,234.50, US$, USD, 1.234,50, 1 234,50 $). Weighed: mixing EUR with a fixed rate. Picked formats only, so the right answer is never a guess about an exchange rate.

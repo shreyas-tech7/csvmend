@@ -56,9 +56,9 @@ A messy CSV goes in. A profiler writes a short summary of each column. A planner
 
 - `index.html` is the demo page. It shows the messy table, the plan and the clean table with changed cells marked.
 - `DEMO.md` is a real terminal transcript.
-- `PLAN.md` is the build plan. `TOOLING.md` lists the tools and their checks. `PROPOSALS.md` lists ideas for later.
+- `PLAN.md` is the build plan. `PROPOSALS.md` lists ideas for later.
 - `INTERVIEW_QA.md` has questions and answers about the design.
-- `HUMAN_STEPS.md` lists what only Shreyas can do. `handoff/COWORK_PROMPT.md` is a prompt for the browser steps.
+- `HUMAN_STEPS.md` lists what only Shreyas can do.
 - `RELEASE_CHECK.md` records the checks run before the release candidate.
 - `build/BUILD_PROMPT.md` is the full prompt that the build agent followed.
 

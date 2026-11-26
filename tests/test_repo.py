@@ -100,7 +100,6 @@ def test_ship_files():
         "docs/WALKTHROUGH.md",
         "docs/INTERVIEW_QA.md",
         "docs/HUMAN_STEPS.md",
-        "docs/handoff/COWORK_PROMPT.md",
         "docs/build/BUILD_PROMPT.md",
     ]:
         assert (ROOT / f).is_file(), f

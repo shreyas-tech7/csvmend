@@ -148,7 +148,7 @@
  {
   "id": "F17",
   "area": "release",
-  "description": "Hand-off: CHANGELOG with release SHA, HUMAN_STEPS, COWORK_PROMPT, GITHUB_ABOUT, topics",
+  "description": "Hand-off: CHANGELOG with release SHA, HUMAN_STEPS, GITHUB_ABOUT, topics. The agent hand-off prompt was removed before the public release.",
   "steps": [
    "grep -E '[0-9a-f]{40}' CHANGELOG.md docs/HUMAN_STEPS.md"
   ],
